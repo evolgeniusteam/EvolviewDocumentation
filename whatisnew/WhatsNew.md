@@ -1,21 +1,23 @@
+## What's new
+
+### Citations
 * _Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
 
-* _please **Cite us**_ if you find this tool useful: 
+* _please **Cite us**_ if you find this tool useful:
 	* He et al, Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees, Nucleic Acids Res, (2016). ([http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full](http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full))
 	*  Zhang et al. EvolView, an online tool for visualizing, annotating and managing phylogenetic trees. Nucleic Acids Res (2012) pp. 4. ([http://nar.oxfordjournals.org/content/40/W1/W569](http://nar.oxfordjournals.org/content/40/W1/W569)). See also the [citation page](citation).
 
-## What's new
 
 ### Jan 19, 2017
 * use '!recycleColor' modifier to stop recycling colors in "Color shapes and strips" plot
 For example by default colors will be recycled:
 
 The tree:
-{{
+```
 (chicken,((mouse,rat),(chimp,human)));
-}}
+```
 ----
-{{
+```
 
 ##color strips
 !type	strip,rect,circle,star,check,triangle
@@ -32,12 +34,12 @@ chicken	yellow,purple,white:darkred,lightgreen:darker
 rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
-}}
+```
 ![](WhatsNew_colorrecycle2.png)
 
 ----
 However, set  '!recycleColor' or '!colorRecycle' to 0 will stop cycling the colors:
-{{
+```
 
 ##color strips
 !type	strip,rect,circle,star,check,triangle
@@ -46,8 +48,8 @@ However, set  '!recycleColor' or '!colorRecycle' to 0 will stop cycling the colo
 !plotwidth	200
 
 ## -- recycle color, default is true --
-## -- !type determines that maximally six objects will be displayed 
-## -- normally user-supplied colors will be recycled; for example, 
+## -- !type determines that maximally six objects will be displayed
+## -- normally user-supplied colors will be recycled; for example,
 ## -- however, when !recycleColor is set to 0, the colors will not be recycled
 !colorRecycle	0
 
@@ -59,16 +61,16 @@ chicken	yellow,purple,white:darkred,lightgreen:darker
 rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
-}}
+```
 ![](WhatsNew_colorrecycle.png)
 ----
 
 ### Dec 29, 2016
-* bug fixes 
+* bug fixes
 	* fixed a bug that the header disappeared in Mac Safari
 
 ### Nov 2, 2016
-* bug fixes 
+* bug fixes
 	* fixed a bug that exporting to PDF fails on some circular group labels
 
 ### Aug 25, 2016
@@ -98,14 +100,14 @@ To turn on/off the new visualisation styles, use the corresponding icons on the 
 * bug fixes as always
 * added support for a new bootstrap value style
 here is the tree:
-{{
+```
 (A:0.1,(B:0.2,(C:0.3,(D:0.4,E:0.5)40:0.6)80:0.05)100:0.1)90:0.43;
-}}
+```
 the dataset:
-{{
+```
 ## place=4
 !bootstrapValueStyle	show=1,style=numeric,place=4,color=darkred
-}}
+```
 and the visualisation results:
 ![](WhatsNew_bootstrapvalues_place4.png)
 
@@ -128,7 +130,7 @@ See [here](DatasetTimeLine) for more information and examples.
 ![](WhatsNew_copyDatasets2OtherTrees2.png)
 
 ### Feb 19, 2016
-* updated user interface for tree sharing 
+* updated user interface for tree sharing
 
 ### Feb 3, 2016
 * bug fixes
@@ -146,23 +148,23 @@ See the screenshot below:
 ### Jan 28, 2016
 * use scientific numbers as branch lengths
 Float numbers less than 0.0001 (1e-4; non-inclusive) will be displayed as scientific numbers. For example, the tree:
-{{
+```
 (A:0.0001,(B:0.00002,(C:0.000003,D:0.000004)100:0.05)100:0.1)90:0.43;
-}}
+```
 will be visualised as:
 ![](WhatsNew_tiny_branch_length01.png)
 
 In addition, branch lengths can be directly written as scientific numbers. For example, the following tree will be correctly parsed and visualised:
-{{
+```
 (A:1e-2,(B:0.00002,(C:0.000003,D:1.45e-5)100:0.05)100:0.1)90:0.43;
-}}
+```
 ![](WhatsNew_tiny_branch_length02.png)
 
 ### Jan 26, 2016
 * bug fixes
 	* fixed an issue caused by Google Chrome ver 48+
 	* datasets for 'Bootstrap value style' can only be uploaded for trees with bootstrap values (of course)
-	* fixed an issue that causes blank page in certain browsers after the deployment of a new version 
+	* fixed an issue that causes blank page in certain browsers after the deployment of a new version
 
 ### Jan 20, 2016
 * added support for collapsing at internal nodes; with this annotation type, users can :
@@ -178,15 +180,15 @@ See [here](DatasetCollapseInternalNodes) for more information and examples.
 * now Evolview can correctly parse and display parentheses in leaf node names. As long as they come in pairs, parentheses can be put at anywhere (start, end, middle) of the leaf name; multiple and nested parentheses in a single leaf name are also supported.
 
 For example, the tree below:
-{{
-( ( ( 
+```
+( ( (
 (A)(NC_1)B(C):0.4,
 ((B)B_(NC_2)):0.3)90:0.2,
 (
 C_(NC_3):0.1,
 (D_(NC_4)):0.001)75:0.2 )90:0.3,
 E_(NC_5)_E:0.44 )100:0.3;
-}}
+```
 will be visualised as:
 ![](WhatsNew_leaf_names_with_parentheses.png)
 
