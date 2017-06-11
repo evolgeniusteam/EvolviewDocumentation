@@ -1,6 +1,6 @@
 Please choose a topic below to continue:
 
-# [Dataset overview](DatasetOverview)
+# [Dataset overview](DatasetOverview.md)
 # [Stroke color and width](DatasetStroke)
 # [Pie charts](DatasetPieCharts)
 # [Bars](DatasetBars)
