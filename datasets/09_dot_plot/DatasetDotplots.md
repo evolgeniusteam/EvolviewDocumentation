@@ -1,18 +1,18 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Dot plots
 Dot plot is a variant of Bar chart, therefore a dataset for Bar charts can be used directly.
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#the !dotplots modifier](#the-!dotplots-modifier)
-* [#strokes](#strokes)
-* [#show data value](#show-data-value)
-* [#hide some values](#hide-some-values)
-* [#customise column label styles](#customise-column-label-styles)
-* [#examples](#examples)
-* [#add dotplots to collapsed trees](#add-dotplots-to-collapsed-trees)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [the !dotplots modifier](#the-!dotplots-modifier)
+* [strokes](#strokes)
+* [show data value](#show-data-value)
+* [hide some values](#hide-some-values)
+* [customise column label styles](#customise-column-label-styles)
+* [examples](#examples)
+* [add dotplots to collapsed trees](#add-dotplots-to-collapsed-trees)
 
 {anchor:overview}
 ### Overview
@@ -48,7 +48,7 @@ B	10,20,20
 C	8,9,7
 D	20,20,20
 ```
-![](DatasetDotplots_evolview_dotplots.png)
+![](images/DatasetDotplots_evolview_dotplots.png)
 By default, data are represented by dots / filled circles; however they could be alternatively represented by rectangular:
 ```
 ##dot plots
@@ -72,12 +72,13 @@ B	10,20,20
 C	8,9,7
 D	20,20,20
 ```
-![](DatasetDotplots_dotplots_rectangular.png)
+![](images/DatasetDotplots_dotplots_rectangular.png)
 
 {anchor:modifiers}
 ### Supported modifiers
 The following 'modifiers' (Key-Value pairs) are supported for dot plots:
-||Key (case insensitive)||Value||Description||
+|Key (case insensitive)|Value|Description|
+|--|--|--|
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
@@ -97,10 +98,10 @@ The following 'modifiers' (Key-Value pairs) are supported for dot plots:
 |!showdataValue | |see section show data value for more details|
 |!columnLabelStyle| |tweak column label styles; see 'column label style' below for detail|
 **_notes on preparing your datasets!!_**
-# please always use TAB to separate the modifiers and their values.
-# if a modifier is used (accidentally) multiple tiles, only the last one will be used.
-# the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
-# please also always use TAB to separate the columns in the data section.
+1. please always use TAB to separate the modifiers and their values.
+2. if a modifier is used (accidentally) multiple tiles, only the last one will be used.
+3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
+4. please also always use TAB to separate the columns in the data section.
 
 {anchor:the !dotplots modifier}
 ### The !dotplots modifier
@@ -108,7 +109,8 @@ The 'value' of the modifier **!dotplots** can be any combination of the followin
 ```
 shape=circle,margin=2,colwidth=30,roundedcorner=3
 ```
-|| ||alternative value||description||
+|key|alternative value|description|
+|--|--|--|
 |shape = circle|rect|shape of the dot plots; default is circle|
 |colwidth=30|any integer > 0|set pixel width per column ; optional; default = 20|
 |margin=2|any integer >= 0|set pixel space between columns; optional; default = 0|
@@ -142,12 +144,13 @@ B	10,20,20
 C	8,9,7
 D	20,20,20
 ```
-![](DatasetDotplots_dotplots_stroke.png)
+![](images/DatasetDotplots_dotplots_stroke.png)
 
 {anchor:show data value}
 ### Show data value
 The 'value' of the modifier **!showdataValue** can be any combination of the following, separated by a ",":
-|| ||alternative value||description||
+|key|alternative value|description|
+|--|--|--|
 |show = 1|0|show or hide data values; optional; the data values will be shown if omitted|
 |fontsize=12|any integer|set font size; optional; default = 10|
 |fontcolor=red|any value color name|set text color; optional; default = 'black' or 'white' depending on the background color|
@@ -172,7 +175,7 @@ C	8,9,7
 D	20,20,20
 ```
 The purpose here is to ensure the readability of the texts on any background colors.
-![](DatasetDotplots_dotplots_default_fontcolor.png)
+![](images/DatasetDotplots_dotplots_default_fontcolor.png)
 ----
 In this particular case, if we force the text color to 'white':
 ```
@@ -193,7 +196,7 @@ C	8,9,7
 D	20,20,20
 ```
 ... the texts of the 3rd column where the background color is yellow are unreadable:
-![](DatasetDotplots_dotplots_force_fontwhite.png)
+![](images/DatasetDotplots_dotplots_force_fontwhite.png)
 
 {anchor:hide some values}
 ### Hide a value or a range of values
@@ -215,7 +218,7 @@ B	10,20,20
 C	8,9,7
 D	20,20,20
 ```
-![](DatasetDotplots_dotplots_values_hidden.png)
+![](images/DatasetDotplots_dotplots_values_hidden.png)
 
 {anchor:customise column label styles}
 ### Customise column label styles
@@ -224,7 +227,8 @@ The 'value' of the modifier **!columnLabelStyle** can be any combination of the 
 ```
 show=1,fontsize=14,fontitalic=0,fontbold=1,textangle=60,fontcolor=red
 ```
-|| ||alternative value||description||
+|key|alternative valu|description|
+|--|--|--|
 |show = 1|0|show or hide data values; optional; if omitted, the column lables will be shown|
 |fontsize=12|any integer|set font size; optional; default = 10|
 |fontcolor=red|any value color name|set text color for all labels; optional; default = colors matching the corresponding columns|
@@ -256,13 +260,13 @@ B	10,20,20
 C	8,9,7
 D	20,20,20
 ```
-![](DatasetDotplots_dotplots_column_label_customized.png)
+![](images/DatasetDotplots_dotplots_column_label_customized.png)
 
 {anchor:examples}
 ### Examples
 More examples will be added.
 {anchor:add dotplots to collapsed trees}
 ### Add dotplots to collapsed trees
-Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add dot plots to a collapsed tree. See [here](DatasetCollapseInternalNodes#dotplots) for more information.
+Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add dot plots to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 
-[<< previous section: Group labels](DatasetGroupLabel)      |       [next section: Heatmap >>](DatasetHeatmap)
+[<< previous section: group label ](/datasets/08_group_label/DatasetGroupLabel.md)      |       [next section: heatmap >>](/datasets/10_heatmap/DatasetHeatmap.md)

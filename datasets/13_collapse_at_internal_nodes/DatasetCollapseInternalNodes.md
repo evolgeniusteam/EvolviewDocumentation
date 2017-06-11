@@ -276,4 +276,4 @@ namedcolumn=fast evolving,color=lightgreen:darker
 ![](images/DatasetCollapseInternalNodes_columnplots01.png)
 
 
-[<< previous section: Column plots](DatasetColumnPlots)  |       [next section: Time Line >>](DatasetTimeLine)
+[<< previous section: Column plots](/datasets/12_column_plot/DatasetColumnPlots.md)  |       [next section: Time Line >>](/datasets/14_timeline/DatasetTimeLine.md)

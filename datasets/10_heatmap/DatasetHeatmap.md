@@ -1,22 +1,23 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Heatmap
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#strokes](#strokes)
-* [#the !heatmap modifier](#the-!heatmap-modifier)
-* [#show data value](#show-data-value)
-* [#color gradient](#color-gradient)
-* [#tick labels of the color gradient of the legend](#tick-labels-of-the-color-gradient-of-the-legend)
-* [#column label style customisation](#column-label-style-customisation)
-* [#add heatmap to collapsed trees](#add-heatmap-to-collapsed-trees)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [strokes](#strokes)
+* [the !heatmap modifier](#the-!heatmap-modifier)
+* [show data value](#show-data-value)
+* [color gradient](#color-gradient)
+* [tick labels of the color gradient of the legend](#tick-labels-of-the-color-gradient-of-the-legend)
+* [column label style customisation](#column-label-style-customisation)
+* [add heatmap to collapsed trees](#add-heatmap-to-collapsed-trees)
 
 {anchor:overview}
 ### Overview
 **_note:_**
-# please consult the tree 'heatmaps' in the DEMOS project to see the Heatmap in action
-# when exported to pdf using Firefox, the color gradient in the legend is known to be wrong; therefore Google Chrome is strongly recommended.
+1. please consult the tree 'heatmaps' in the DEMOS project to see the Heatmap in action
+2. when exported to pdf using Firefox, the color gradient in the legend is known to be wrong; therefore Google Chrome is strongly recommended.
+
 First, let's see some examples.
 The tree:
 ```
@@ -44,12 +45,13 @@ C	13,15,19,8
 D	20,22,25,4
 ```
 here is how the plot looks like (with annotations):
-![](DatasetHeatmap_heatMap_explained.png)
+![](images/DatasetHeatmap_heatMap_explained.png)
 
 {anchor:modifiers}
 ### Supported modifiers
 The following 'modifiers' (Key-Value pairs) are supported for heatmap:
-||Key (case insensitive)||Value||Description||
+|Key (case insensitive)|Value|Description|
+|--|--|--|
 | **universal modifiers** | | |
 |!Title or !Legend|text|title of the legend; default = name of the dataset|
 |!ShowLegends|0 or 1|0 : hide legends; 1 : show legends|
@@ -74,10 +76,10 @@ The following 'modifiers' (Key-Value pairs) are supported for heatmap:
 |!grid| | |
 |!plotwidth| |
 **_notes on preparing your datasets!!_**
-# please always use TAB to separate the modifiers and their values.
-# if a modifier is used (accidentally) multiple tiles, only the last one will be used.
-# the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
-# please also always use TAB to separate the columns in the data section.
+1. please always use TAB to separate the modifiers and their values.
+2. if a modifier is used (accidentally) multiple tiles, only the last one will be used.
+3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
+4. please also always use TAB to separate the columns in the data section.
 
 {anchor:strokes}
 ### Strokes
@@ -104,7 +106,7 @@ B	7,9,10,23
 C	13,15,19,8
 D	20,22,25,4
 ```
-![](DatasetHeatmap_heatmap_with_strokecolor.png)
+![](images/DatasetHeatmap_heatmap_with_strokecolor.png)
 
 {anchor:the !heatmap modifier}
 ### the !heatmap modifier
@@ -113,7 +115,8 @@ The 'value' of the modifier **!heatmap** can be any combination of the following
 margin=2,colwidth=30,roundedcorner=2
 ```
 Please note the !heatmap modifier is optional; if omitted, default values will be used.
-|| ||alternative value||description||
+|key|alternative value|description|
+|--|--|--|
 |colwidth=30|any integer > 0|set pixel width per column ; optional; default = 20|
 |margin=2|any integer >= 0|set pixel space between columns; optional; default = 0|
 |roundedcorner=1|any integer >= 0|set rounded corner in pixels for rectangular; valid when shape=rect; optional, default = 0|
@@ -139,24 +142,25 @@ B	7,9,10,12
 C	13,15,16,19
 D	20,22,23,25
 ```
-![](DatasetHeatmap_heatmap_everything_bydefault.png)
+![](images/DatasetHeatmap_heatmap_everything_bydefault.png)
 ----
 Example 2, margin=2:
 ```
 !heatmap	margin=2,colwidth=20
 ```
-![](DatasetHeatmap_heatmap_with_margin_colwidth.png)
+![](images/DatasetHeatmap_heatmap_with_margin_colwidth.png)
 ----
 Example 3, roundedcorner=5:
 ```
 !heatmap	margin=2,colwidth=30,roundedcorner=5
 ```
-![](DatasetHeatmap_heatmapt_roundedcorner_colwidth.png)
+![](images/DatasetHeatmap_heatmapt_roundedcorner_colwidth.png)
 
 {anchor:show data value}
 ### Show data value
 Heatmap supports the **!showdataValue** modifier; the 'value' of **!showdataValue** can be any combination of the following, separated by a ",":
-|| ||alternative value||description||
+|key|alternative value|description|
+|--|--|--|
 |show = 1|0|show or hide data values; optional; the data values will be shown if omitted|
 |fontsize=12|any integer|set font size; optional; default = 10|
 |fontcolor=red|any value color name|set text color; optional; default = 'black' or 'white' depending on the background color|
@@ -187,28 +191,28 @@ B	7,9,10,12
 C	13,15,16,19
 D	20,22,23,25
 ```
-![](DatasetHeatmap_heatmap_example1.png)
+![](images/DatasetHeatmap_heatmap_example1.png)
 ----
 Example 2:
 ```
 ## -- red to white to blue --
 !colorgradient	red,white,blue
 ```
-![](DatasetHeatmap_heatmap_alternative_colorgradients.png)
+![](images/DatasetHeatmap_heatmap_alternative_colorgradients.png)
 ----
 Example 3:
 ```
 ## -- grays; only two colors here --
 !colorgradient	black,white
 ```
-![](DatasetHeatmap_heatmap_blackwhite.png)
+![](images/DatasetHeatmap_heatmap_blackwhite.png)
 ----
 Example 4:
 ```
 ## -- use five colors this time --
 !colorgradient	blue,red,yellow,white,green
 ```
-![](DatasetHeatmap_heatmap_fivecolors.png)
+![](images/DatasetHeatmap_heatmap_fivecolors.png)
 
 {anchor:tick labels of the color gradient of the legend}
 ### Tick labels of the color gradient of the legend
@@ -229,18 +233,19 @@ B	7,9,10,12
 C	13,15,16,19
 D	20,22,23,25
 ```
-![](DatasetHeatmap_heatmap_ticklables_default.png)
+![](images/DatasetHeatmap_heatmap_ticklables_default.png)
 ----
 Example 2, customized tick labels using !colorgradientMarkLabel:
 ```
 !colorgradientMarkLabel	0,5,10,15,20,25
 ```
-![](DatasetHeatmap_heatmap_ticklables_customized.png)
+![](images/DatasetHeatmap_heatmap_ticklables_customized.png)
 
 {anchor:column label style customisation}
 ### column label style customisation
 Heatmap also supports modifier **!columnLabelStyle**; the value of this modifier can be any combination of the following, separated by a ",":
-|| ||alternative value||description||
+|key|alternative value|description|
+|--|--|--|
 |show = 1|0|show or hide data values; optional; if omitted, the column lables will be shown|
 |fontsize=12|any integer|set font size; optional; default = 10|
 |fontcolor=red|any value color name|set text color for all labels; optional; default = black|
@@ -262,10 +267,10 @@ B	7,9,10,12
 C	13,15,16,19
 D	20,22,23,25
 ```
-![](DatasetHeatmap_heatmap_column_label_customized.png)
+![](images/DatasetHeatmap_heatmap_column_label_customized.png)
 {anchor:add heatmap to collapsed trees}
 ### Add heatmap to collapsed trees
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add heatmaps to a collapsed tree. See [here](DatasetCollapseInternalNodes#heatmap) for more information.
 
 
-[<< previous section: Dot plots](DatasetDotplots)      |       [next section: Bootstrap value styles >>](DatasetBootstrapValueStyle)
+[<< previous section: dot plot ](/datasets/09_dot_plot/DatasetDotplots.md)      |       [next section: bootstrap >>](/datasets/11_bootstrap/DatasetBootstrapValueStyle.md)

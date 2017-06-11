@@ -1,9 +1,9 @@
 ### Table of contents
-* Supported [#input](#input) formats
-* Supported [#text output](#text-output) formats
-* Supported [#graphic output](#graphic-output) formats
-* [#name internal nodes](#name-internal-nodes)
-* [#use parentheses in leaf node labels](#use-parentheses-in-leaf-node-labels)
+* Supported [input](#input) formats
+* Supported [text output](#text-output) formats
+* Supported [graphic output](#graphic-output) formats
+* [name internal nodes](#name-internal-nodes)
+* [use parentheses in leaf node labels](#use-parentheses-in-leaf-node-labels)
 * Use [#scientific numbers](#scientific-numbers) as branch lengths
 
 {anchor:input}

@@ -97,4 +97,4 @@ m	purple	anywhere
 ### Add leaf color to a collapsed tree
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add leaf color to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 
-[<< previous section: Branch color](DatasetBranchColor)      |       [next section: Leaf background color >>](DatasetLeafBKColor)
+[<< previous section: branch color](/datasets/04_branch/DatasetBranchColor.md)      |       [next section: leaf background color >>](/datasets/05_leaf/DatasetLeafBKColor.md)

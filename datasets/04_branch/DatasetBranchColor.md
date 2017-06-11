@@ -99,5 +99,4 @@ human	red	toroot
 ### add branch color to a collapsed tree
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add branch color to a collapsed tree. See [here](DatasetCollapseInternalNodes#branchcolors) for more information.
 
-
-[<< previous section: Bar charts](DatasetBars)      |       [next section: Leaf color >>](DatasetLeafColor)
+[<< previous section: bar chart ](/datasets/03_bar/DatasetBars.md)      |       [next section: leaf color >>](/datasets/05_leaf/DatasetLeafColor.md)

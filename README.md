@@ -1,10 +1,10 @@
 ## Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees
-[EvolView](www.evolgenius.info/evolview/) is an online tool for displaying, managing and customizing phylogenetic trees.
+[EvolView](http://www.evolgenius.info/evolview/) is an online tool for displaying, managing and customizing phylogenetic trees.
 
 With EvolView, you can:
 * visualize phylogenetic trees of various formats,
-* add [datasets](Dataset) and do customizations to phylogenetic trees,
-* export trees to various [text (newick, nhx, phyloXML, etc) and graphic formats](SupportedTreeFormats), and
+* add [datasets](datasets/Dataset.md) and do customizations to phylogenetic trees,
+* export trees to various [text (newick, nhx, phyloXML, etc) and graphic formats](supportedtreeformats/SupportedTreeFormats.md), and
 * organize trees, projects and datasets in an intuitive and efficient way.
 
 * _**Cite us**_ if you find this tool useful:
@@ -13,7 +13,7 @@ With EvolView, you can:
 
 ## Table of Contents
 
-### [The WebServer](www.evolgenius.info/evolview/)
+### [The WebServer](http://www.evolgenius.info/evolview/)
 	* Evolview Web server
 
 ### [Supported Browsers](miscs/SupportedBrowsers.md)
@@ -46,7 +46,7 @@ With EvolView, you can:
 ### [Datasets](Dataset)
 * Detailed introduction to supported annotation datasets
 * Please choose a topic below to continue:
-	* [Dataset overview](datasets/00_overview/DatasetOverview.md.md)
+	* [Dataset overview](datasets/00_overview/DatasetOverview.md)
 	* [Stroke color and width](datasets/01_stroke_color_and_width/DatasetStroke.md)
 	* [Pie charts](datasets/02_pie/DatasetPieCharts.md)
 	* [Bars](datasets/03_bar/DatasetBars.md)

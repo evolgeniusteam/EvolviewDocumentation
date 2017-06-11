@@ -1,12 +1,12 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Bootstrap value styles
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#data](#data)
-* [#examples](#examples)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [data](#data)
+* [examples](#examples)
 * [show multiple sets of bootstrap values](#showMultipleBootstraps)
 
 {anchor:overview}
@@ -22,17 +22,18 @@ The tree:
 ##bootstrap value styles
 !bootstrapValueStyle	show=1,style=circle,size=10,place=1,color=red
 ```
-![](DatasetBootstrapValueStyle_example_01.png)
+![](images/DatasetBootstrapValueStyle_example_01.png)
 NOTE: in order to show bootstrap values, the tree has to have bootstrap values, and the "Show/Hide bootstrap scores" button on the toolbar has to be activated:
-![](DatasetBootstrapValueStyle_bootstrap_scores_button_normal.png)
-![](DatasetBootstrapValueStyle_bootstrap_scores_button_active.png)
+![](images/DatasetBootstrapValueStyle_bootstrap_scores_button_normal.png)
+![](images/DatasetBootstrapValueStyle_bootstrap_scores_button_active.png)
 
 {anchor:modifiers}
 ### Supported modifiers
 In addition to the universal modifiers , an additional 'modifier' is supported:
 **!bootstrapValueStyles** or **!bootstrapValueStyle** (case insensitive)
 The value of this modifier can be any of the following options, individually or in combination:
-|| ||alternative value||description||
+|key|alternative value|description|
+|--|--|--|
 |show=1|0|show or hide all bootstrap values; optional; default = 1|
 |style=numeric|any of the following:rect,circle,star,check,triangle|display bootstrap values as numbers or shapes; optional; default = numeric|
 |size=10|any integer >= 0|set font size of the bootstrap values, or diameter of the shapes; optional, default = 10|
@@ -40,10 +41,10 @@ The value of this modifier can be any of the following options, individually or 
 |strokewidth=1|any integer >=1|set strokewidth for bootstrap values, valid only when the strokecolor is set; optional, default = 1; see examples below for detail|
 |place=1|2 or 3 or 4|set the place where the bootstrap values to be displayed ; optional, default = 1; see examples below for detail|
 **_notes on preparing your datasets!!_**
-# please always use TAB to separate the modifiers and their values.
-# if a modifier is used (accidentally) multiple tiles, only the last one will be used.
-# the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
-# please also always use TAB to separate the columns in the data section.
+1. please always use TAB to separate the modifiers and their values.
+2. if a modifier is used (accidentally) multiple tiles, only the last one will be used.
+3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
+4. please also always use TAB to separate the columns in the data section.
 
 {anchor:data}
 ### data
@@ -60,8 +61,8 @@ the **_second part_** sets the display styles for bootstrap values in the range 
 * style=rect,size=20
 * are all valid.
 **_NOTE:_**
-# unlike other annotation datasets, the data part of 'Bootstrap Value Styles' is optional; when omitted, the global options defined by modifier '!bootstrapValueStyle' will be applied to all bootstrap values
-# the data part, when available, will override the global options.
+1. unlike other annotation datasets, the data part of 'Bootstrap Value Styles' is optional; when omitted, the global options defined by modifier '!bootstrapValueStyle' will be applied to all bootstrap values
+2. the data part, when available, will override the global options.
 
 {anchor:examples}
 ### Examples
@@ -75,7 +76,7 @@ Example 1:
 ## no data, global options will be applied to all bootstrap values
 !bootstrapValueStyle	show=1,style=circle,size=10,place=1,color=red   
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_nodata.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_nodata.png)
 ----
 Example 2:
 ```
@@ -85,7 +86,7 @@ Example 2:
 80,90	color=red,size=12
 100,120	color=darkred,size=14
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_hide_certain_value.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_hide_certain_value.png)
 ----
 Example 3:
 ```
@@ -96,7 +97,7 @@ Example 3:
 80	color=gold
 100	color=red
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_circles_with_different_colors.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_circles_with_different_colors.png)
 ----
 Example 4:
 ```
@@ -106,7 +107,7 @@ Example 4:
 80	color=white:gold,strokewidth=3
 100	color=white:red,strokewidth=2
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_circles_with_different_colors_and_strokes.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_circles_with_different_colors_and_strokes.png)
 ----
 Example 5:
 ```
@@ -116,7 +117,7 @@ Example 5:
 80	color=white:gold,strokewidth=3
 100	color=white:red,strokewidth=2   
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_place2.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_place2.png)
 ----
 Example 6:
 ```
@@ -126,14 +127,14 @@ Example 6:
 60,80	color=white:gold
 81,100	color=white:red  
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_place3.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_place3.png)
 ----
 Example 7:
 ```
 ## place=4
 !bootstrapValueStyle	show=1,style=numeric,place=4,color=darkred
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_place4.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_place4.png)
 ----
 Example 8:
 ```
@@ -143,7 +144,7 @@ Example 8:
 80	color=red:blue,style=rect,strokewidth=3
 100	show=1,style=numeric
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_mix.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_mix.png)
 ----
 Example 9:
 ```
@@ -158,7 +159,7 @@ Example 9:
 41,80	color=gold
 81,100	color=red
 ```
-![](DatasetBootstrapValueStyle_bootstrapvalues_with_legend.png)
+![](images/DatasetBootstrapValueStyle_bootstrapvalues_with_legend.png)
 
 {anchor:showMultipleBootstraps}
 ### Show multiple sets of bootstrap values
@@ -175,22 +176,23 @@ note there are three sets of bootstrap values, they are written as '80/1/0.99'.
 ```
 !bootstrapValueStyle	show=1,style=multiple,size=10,color=red|green|blue
 ```
-![](DatasetBootstrapValueStyle_multibootstraps_01.png)
+![](images/DatasetBootstrapValueStyle_multibootstraps_01.png)
 please note here:
-# style=**_multiple_**
-# 'color' has three color names, separated by '|'; if the number of colors is less than three (e.g. color=red|green), the colors will be cycled.
+1. style=**_multiple_**
+2. 'color' has three color names, separated by '|'; if the number of colors is less than three (e.g. color=red|green), the colors will be cycled.
+
 for example:
 ```
 ## there are three sets of bootstrap values, but only two colors:
 !bootstrapValueStyle	show=1,style=multiple,size=10,color=red|green
 ```
-![](DatasetBootstrapValueStyle_multibootstrap_02.png)
+![](images/DatasetBootstrapValueStyle_multibootstrap_02.png)
 ----
 of course the font size can be changed:
 ```
 !bootstrapValueStyle	show=1,style=multiple,size=14,color=red|green|darkblue
 ```
-![](DatasetBootstrapValueStyle_multibootstrap_03.png)
+![](images/DatasetBootstrapValueStyle_multibootstrap_03.png)
 
 
-[<< previous section: Heatmap](DatasetHeatmap)      |       [next section: Column plots >>](DatasetColumnPlots)
+[<< previous section: heatmap ](/datasets/10_heatmap/DatasetHeatmap.md)      |       [next section: column plot >>](/datasets/12_column_plot/DatasetColumnPlots.md)

@@ -1,8 +1,8 @@
 ## Share your trees
 ### Table of contents
-* [#the interface](#the-interface)
-* [#sharing modes](#sharing-modes)
-* [#more about the Tree Sharing page](#more-about-the-Tree-Sharing-page)
+* [the interface](#the-interface)
+* [sharing modes](#sharing-modes)
+* [more about the Tree Sharing page](#more-about-the-Tree-Sharing-page)
 
 _**Note:**_
 1. Sharing Trees is still under development; please send suggestions and comments to us.

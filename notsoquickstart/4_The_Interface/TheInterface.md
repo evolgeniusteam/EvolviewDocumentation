@@ -1,9 +1,9 @@
 ## The interface
 
 Table of contents
-* [#overview](#overview)
-* [#toolbar](#toolbar)
-* [#canvas](#canvas)
+* [overview](#overview)
+* [toolbar](#toolbar)
+* [canvas](#canvas)
 
 {anchor:overview}
 ### The interface overview
@@ -34,5 +34,3 @@ The canvas displays your active tree (only once at a time) and active datasets. 
 * zoom in and out the tree
 * mouse over tree leaves, nodes and datasets to show additional information in a popup panel
 The canvas is featuring WYSIWYG (What-You-See-Is-What-You-Get); what you see at the canvas is what you get when you export your plot to external files.
-
-[<< previous section: Login with SNS accounts](LoginWithSNSAccounts)      |       [next section: datasets >>](Dataset)

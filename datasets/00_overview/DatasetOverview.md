@@ -72,4 +72,4 @@ see more examples in each of the datasets
 _**third column: optional commands to change the default behavior of the input**_
 see the examples in each of the datasets.
 
-  [next section: stroke color and width >>](DatasetStroke)
+| [next section: Strokes and colors >>](/datasets/01_stroke_color_and_width/DatasetStroke.md)

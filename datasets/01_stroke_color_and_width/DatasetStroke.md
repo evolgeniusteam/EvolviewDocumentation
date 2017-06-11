@@ -128,4 +128,4 @@ D	20,5,20
 ```
 ![](images/DatasetStroke_barplot_use_darker_lighter_as_strokecolor_without_annotation.png)
 
-[<< previous section: Dataset overview](DatasetOverview)      |       [next section: Pie charts >>](DatasetPieCharts)
+[<< previous section: datasets overview](/datasets/00_overview/DatasetOverview.md)      |       [next section: pie chart >>](/datasets/02_pie/DatasetPieCharts.md)

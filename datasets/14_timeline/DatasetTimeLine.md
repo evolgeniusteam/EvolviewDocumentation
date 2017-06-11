@@ -11,7 +11,8 @@
 {anchor:overview}
 ### Overview
 **_note:_**
-# please consult the tree 'TimeLines' in the DEMOS project to see TimeLine plots in action
+* please consult the tree 'TimeLines' in the DEMOS project to see TimeLine plots in action
+
 First, let's see some examples.
 The tree:
 ```
@@ -57,10 +58,10 @@ The following 'modifiers' (Key-Value pairs) are supported for heatmap:
 **_please note:_**
 * TimeLine plot supports multi-line key-value pairs, i.e. the modifier and its value can be split into multiple line, as long as they are written in the correct format; see examples above.
 **_notes on preparing your datasets!!_**
-# please always use TAB to separate the modifiers and their values.
-# if a modifier is used (accidentally) multiple tiles, only the last one will be used.
-# the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
-# please also always use TAB to separate the columns in the data section.
+1. please always use TAB to separate the modifiers and their values.
+2. if a modifier is used (accidentally) multiple tiles, only the last one will be used.
+3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
+4. please also always use TAB to separate the columns in the data section.
 
 {anchor:timelineaxis}
 ### 1. the '!timeLineAxis' modifier  (Axis plot)
@@ -376,4 +377,4 @@ Datasets and visualisation results:
 ----
 
 
-[<< previous section: Collapse at internal nodes](DatasetCollapseInternalNodes)   
+[<< previous section: Collapse at internal nodes](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md)

@@ -196,3 +196,5 @@ human	orange,red,white:gold,lightblue
 {anchor:add color strips to collapsed trees}
 ### add color strips to collapsed trees
 See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for details on adding color strips to a collapsed tree.
+
+[<< previous section: leaf decoration ](/datasets/05_leaf/DatasetLeafLabelDeco.md)      |       [next section: protein domain >>](/datasets/07_protein_domain/DatasetProteinDomain.md)

@@ -161,3 +161,5 @@ more examples will be added.
 {anchor:issues}
 ### Known issues
 Exporting to graphical formats other than SVG is not functional if '!shadow' option is on.
+
+[<< previous section: strip and shape ](/datasets/06_strip_and_shape/DatasetColorStripShape.md)      |       [next section: group label >>](/datasets/08_group_label/DatasetGroupLabel.md)

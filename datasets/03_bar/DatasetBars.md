@@ -283,5 +283,4 @@ D	20,5,20
 ```
 ![](images/DatasetBars_bars_showdatavalue_example4.png)
 
-
-[<< previous section: Pie charts](DatasetPieCharts)      |       [next section: Branch color >>](DatasetBranchColor)
+[<< previous section: pie chart](/datasets/02_pie/DatasetPieCharts.md)      |       [next section: branch color >>](/datasets/04_branch/DatasetBranchColor.md)

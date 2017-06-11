@@ -137,4 +137,4 @@ The 'value' of the 'key' !showdataValue can be any combination of the following,
 ### Add pie charts to trees with collapsed internal nodes
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add pie charts to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 
-[<< previous section: stroke styles](DatasetStroke)      |       [next section: Bar chart>>](DatasetBars)
+[<< previous section: Strokes and colors](/datasets/01_stroke_color_and_width/DatasetStroke.md)      |       [next section: bar chart >>](/datasets/03_bar/DatasetBars.md)

@@ -17,4 +17,4 @@ Please note that for security and privacy reasons, we would never save the origi
 As far as we can tell, the encryption cannot be reverse engineered so that the original password string is only known to yourself.
 Every time you login, the password that you enter will be encrypted again using the same algorithm, then the encrypted string will be compared with the one on our server. You'll login successfully if the two strings match.
 
-|  [next section: Use anonymously >>](UseAnonymousely)
+|  [next section: Use anonymously >>](/notsoquickstart/2_Use_Anonymously/UseAnonymousely.md)

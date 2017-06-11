@@ -60,3 +60,5 @@ D	circle,white:green
 {anchor:add leaf label decoration to collapsed trees}
 ### Add leaf label decoration to collapsed trees
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add leaf label decorations to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
+
+[<< previous section: leaf background color](/datasets/05_leaf/DatasetLeafBKColor.md)      |       [next section: strip and shape >>](/datasets/06_strip_and_shape/DatasetColorStripShape.md)

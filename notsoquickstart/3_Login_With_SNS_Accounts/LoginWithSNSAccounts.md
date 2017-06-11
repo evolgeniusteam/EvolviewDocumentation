@@ -10,4 +10,4 @@ An icon will be shown next to your user name to indicate that you've logged in w
 For more information about OAuth, an open standard for authorisation, see here: [http://en.wikipedia.org/wiki/OAuth](http://en.wikipedia.org/wiki/OAuth)
 
 
-[<< previous section: Use anonymously](UseAnonymousely)      |       [next section: the interface >>](TheInterface)
+[<< previous section: Use anonymously](/notsoquickstart/2_Use_Anonymously/UseAnonymousely.md)      |       [next section: the interface >>](/notsoquickstart/4_The_Interface/TheInterface.md)
