@@ -35,7 +35,7 @@ rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
 ```
-![](images/WhatsNew_colorrecycle2.png)
+![](/whatisnew/images/WhatsNew_colorrecycle2.png)
 
 ----
 However, set  '!recycleColor' or '!colorRecycle' to 0 will stop cycling the colors:
