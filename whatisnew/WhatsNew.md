@@ -35,7 +35,7 @@ rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
 ```
-![](WhatsNew_colorrecycle2.png)
+![](images/WhatsNew_colorrecycle2.png)
 
 ----
 However, set  '!recycleColor' or '!colorRecycle' to 0 will stop cycling the colors:
@@ -62,7 +62,7 @@ rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
 ```
-![](WhatsNew_colorrecycle.png)
+![](images/WhatsNew_colorrecycle.png)
 ----
 
 ### Dec 29, 2016
@@ -82,16 +82,16 @@ human	orange,red,white:gold,lightblue
 * added support for two additional tree visualisation styles that can be used in combination with phylograms and cladograms. See [here](TreeStyles) for more information.
 Here is an example:
 1. the original tree:
-![](WhatsNew_tree_vis_styles_02.png)
+![](images/WhatsNew_tree_vis_styles_02.png)
 ----
 2. in combination with style 1:
-![](WhatsNew_tree_vis_styles_03.png)
+![](images/WhatsNew_tree_vis_styles_03.png)
 ----
 3. in combination with style 2:
-![](WhatsNew_tree_vis_styles_04.png)
+![](images/WhatsNew_tree_vis_styles_04.png)
 
 To turn on/off the new visualisation styles, use the corresponding icons on the Toolbar (as shown below):
-![](WhatsNew_tree_vis_styles_01.png)
+![](images/WhatsNew_tree_vis_styles_01.png)
 
 ### May 22, 2016;
 * bug fixes
@@ -109,25 +109,25 @@ the dataset:
 !bootstrapValueStyle	show=1,style=numeric,place=4,color=darkred
 ```
 and the visualisation results:
-![](WhatsNew_bootstrapvalues_place4.png)
+![](images/WhatsNew_bootstrapvalues_place4.png)
 
 ### May 19, 2016
 * added support for [multiple sets of bootstrap values](DatasetBootstrapValueStyle#showMultipleBootstraps); here is an example:
-![](WhatsNew_multibootstraps_01.png)
+![](images/WhatsNew_multibootstraps_01.png)
 
 See [here](DatasetBootstrapValueStyle#showMultipleBootstraps) for more information and examples.
 
 ### May 18, 2016
 * added a new annotation type: [TimeLine](DatasetTimeLine); here is an example:
-![](WhatsNew_timeline_timeline.png)
+![](images/WhatsNew_timeline_timeline.png)
 
 See [here](DatasetTimeLine) for more information and examples.
 
 ### Mar 1, 2016
 * bug fixes as always ...
 * allow user to copy datasets from one tree to others
-![](WhatsNew_copyDatasets2OtherTrees.png)
-![](WhatsNew_copyDatasets2OtherTrees2.png)
+![](images/WhatsNew_copyDatasets2OtherTrees.png)
+![](images/WhatsNew_copyDatasets2OtherTrees2.png)
 
 ### Feb 19, 2016
 * updated user interface for tree sharing
@@ -143,7 +143,7 @@ See [here](DatasetTimeLine) for more information and examples.
 	* keywords highlight
 
 See the screenshot below:
-![](WhatsNew_the_text_editor.png)
+![](images/WhatsNew_the_text_editor.png)
 
 ### Jan 28, 2016
 * use scientific numbers as branch lengths
@@ -152,13 +152,13 @@ Float numbers less than 0.0001 (1e-4; non-inclusive) will be displayed as scient
 (A:0.0001,(B:0.00002,(C:0.000003,D:0.000004)100:0.05)100:0.1)90:0.43;
 ```
 will be visualised as:
-![](WhatsNew_tiny_branch_length01.png)
+![](images/WhatsNew_tiny_branch_length01.png)
 
 In addition, branch lengths can be directly written as scientific numbers. For example, the following tree will be correctly parsed and visualised:
 ```
 (A:1e-2,(B:0.00002,(C:0.000003,D:1.45e-5)100:0.05)100:0.1)90:0.43;
 ```
-![](WhatsNew_tiny_branch_length02.png)
+![](images/WhatsNew_tiny_branch_length02.png)
 
 ### Jan 26, 2016
 * bug fixes
@@ -172,7 +172,7 @@ In addition, branch lengths can be directly written as scientific numbers. For e
 	* show a small triangle at the collapsed nodes that is proportional to the number of leaves that the collapsed node contains
 
 Here is an example:
-![](WhatsNew_collapse_internal_nodes.png)
+![](images/WhatsNew_collapse_internal_nodes.png)
 
 See [here](DatasetCollapseInternalNodes) for more information and examples.
 
@@ -190,12 +190,12 @@ C_(NC_3):0.1,
 E_(NC_5)_E:0.44 )100:0.3;
 ```
 will be visualised as:
-![](WhatsNew_leaf_names_with_parentheses.png)
+![](images/WhatsNew_leaf_names_with_parentheses.png)
 
 
 ### Dec 6, 2015
 * added a new type anntation dataset: Column plots, it allow users to visualise complex summary information of species in a phylogenetic tree, here is an example:
-![](WhatsNew_example_07.png)
+![](images/WhatsNew_example_07.png)
 See [here](DatasetColumnPlots) for more information.
 ### Dec 5, 2015
 * added support for the use of 'darker' or 'brighter' as stroke colors, see the section ['Stroke color and width'](DatasetStroke#use) and related sections in the annotation datasets.
@@ -203,8 +203,8 @@ for example:
 	* green:darker == use darker green as stroke color; the stroke color is usually 20% darker than the specified color
 	* purple:ligher or purple:brighter == use lighter purple as stroke color; the stroke color will be 20% brighter than the specific color
 Here are some examples:
-![](WhatsNew_barplot_use_darker_lighter_as_strokecolor.png)
-![](WhatsNew_columnplots_popup_annotated.png)
+![](images/WhatsNew_barplot_use_darker_lighter_as_strokecolor.png)
+![](images/WhatsNew_columnplots_popup_annotated.png)
 ### Dec 4, 2015
 * added a new type of annotation dataset: bootstrap value styles, it allows users to change the
 	* visiblity
@@ -217,24 +217,24 @@ of the bootstrap scores according to their
 	* value ranges, e.g. 10~60
 see [here](DatasetBootstrapValueStyle) for detail.
 Here are some examples:
-![](WhatsNew_bootstrapValueStyles.png)
-![](WhatsNew_bootstrapvalues_circles_with_different_colors.png)
-![](WhatsNew_bootstrapvalues_place2.png)
+![](images/WhatsNew_bootstrapValueStyles.png)
+![](images/WhatsNew_bootstrapvalues_circles_with_different_colors.png)
+![](images/WhatsNew_bootstrapvalues_place2.png)
 ### Dec 1, 2015
 * added a new modifier '!columLabelStyle' to allow user to customize the column labels for [dotplot](DatasetDotplots) and [heatmap](DatasetHeatmap), below is an example:
-![](WhatsNew_dotplots_columnLabelStyle.png)
+![](images/WhatsNew_dotplots_columnLabelStyle.png)
 ### Nov 30, 2015
 * bug fixes as usual
 * added a new option 'valuesToHide' for modifier !showDataValue of the dot plots; below is an example; see here for more information: [values to hide](DatasetDotplots#hide)
-![](WhatsNew_dotplot_values_to_hide.png)
+![](images/WhatsNew_dotplot_values_to_hide.png)
 ### April 4, 2015
 * bug fixes as always
 * added a new annotation type, [heatmap](DatasetHeatmap):
-![](WhatsNew_heatMap_explained.png)
+![](images/WhatsNew_heatMap_explained.png)
 ### March 31, 2015
 * bug fixes (there are always bugs somewhere ... )
 * added a new annotation type: [dot plot](DatasetDotplots); here is an example:
-![](WhatsNew_dotplots_default_fontcolor.png)
+![](images/WhatsNew_dotplots_default_fontcolor.png)
 ### March 24, 2015
 * bug fixes
 * updated the pfam domain api
@@ -247,7 +247,7 @@ Here are some examples:
 * NOTE: this function is still under development; bugs are thus expected. Please send us feature requests, comments and suggestions!!
 ### Dec 15, 2014
 * added support for a new type of annotation: [Group Labels](DatasetGroupLabel); here is an example:
-![](WhatsNew_grouplabel_circular.png)
+![](images/WhatsNew_grouplabel_circular.png)
 ### Oct 9, 2014
 * bug fixes
 ### Oct 1, 2014
@@ -255,9 +255,9 @@ Here are some examples:
 ### Sep 28, 2014
 * added support for the display of data values in pie and bar charts; see trees 'yeast duplicates' and 'bars' in the "DEMOS" project.
 [pie chart](DatasetPieCharts#show):
-![](WhatsNew_piechart_showdatavalue.png)
+![](images/WhatsNew_piechart_showdatavalue.png)
 [bar chart](DatasetBars#show):
-![](WhatsNew_bars_showdatavalue_example.png)
+![](images/WhatsNew_bars_showdatavalue_example.png)
 ### Sep 23, 2014
 * added a new button "show /hide lines linking leaf labels and datasets" to the "Basic" tab; mouse over this icon to see larger image for more details.
 ### July 4, 2014
