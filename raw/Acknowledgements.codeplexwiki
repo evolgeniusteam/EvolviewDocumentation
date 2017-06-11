@@ -1,0 +1,10 @@
+!! Acknowledgements
+Thanks to all the free tools and open source projects:
+||Name||Link/URL||Note||
+|Google Web Toolkit (GWT)|[url:http://code.google.com/webtoolkit/]||
+|NetBeans|[url:http://netbeans.org/]|IDE|
+|Eclipse|[url:https://eclipse.org/downloads/]|IDE|
+|lib-gwt-svg|[url:http://www.vectomatic.org/lib-gwt-svg]|SVG display/ manipulation tool for GWT|
+|gwtupload|[url:http://code.google.com/p/gwtupload]/|very cool Ajax file uploader for GWT|
+|auroris ColorPicker|[url:http://code.google.com/p/auroris/wiki/ColorPicker]|ColorPicker for GWT|
+|batik - Java SVG toolkit|[url:http://xmlgraphics.apache.org/batik/]|server side tool to convert SVG to (any) other formats|
