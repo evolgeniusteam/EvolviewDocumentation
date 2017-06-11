@@ -1,16 +1,17 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Stroke color and width
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#examples](#examples)
-* [#use 'darker' or 'brighter' as stroke color](#use-'darker'-or-'brighter'-as-stroke-color)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [examples](#examples)
+* [use 'darker' or 'brighter' as stroke color](#use)
 {anchor:overview}
+
 ### Overview
 One potential use of stroke colour is to make hollowed shapes like the following:
-![](DatasetStroke_stroke_color_and_width1.png)
+![](images/DatasetStroke_stroke_color_and_width1.png)
 here is the tree:
 ```
 (A:0.1,B:0.2,(C:0.3,D:0.4)100:0.5)90:0.43;
@@ -31,7 +32,9 @@ In EvolView, the colour attribute of an object can be written as :
 fill_color[:stroke_color](_stroke_color)
 ```
 When the stroke_color is omitted, no stroke will be drawn.
+
 {anchor:modifiers}
+
 ### Related modifiers
 _NOTE: not all datasets support these modifiers._
 _**!defaultStrokeWidth**_
@@ -39,17 +42,18 @@ By default, a stroke width of '1' (one pixel) will be used; this can be changed 
 ```
 !defaultStrokeWidth	stroke_width_value
 ```
-**_Note:**_
+**Note:**
 * always separate the key and attributes with a single TAB character
 * this value will be applied to all shapes.
 _**!defaultStrokeColor**_
 A default colour can also be specified by the following modifier:
 ```
 !defaultStrokeColor	valid_stroke_color
-   ```             
+```             
 and it will be applied to shapes without user-supplied stroke colours.
 
 {anchor:examples}
+
 ### Examples
 example 1:
 ```
@@ -62,7 +66,7 @@ B	purple,darkred,lightgreen
 C	lightblue
 D	darkgreen,grey,pink
 ```
-![](DatasetStroke_stroke_color_more_examples_1.png)
+![](images/DatasetStroke_stroke_color_more_examples_1.png)
 
 example 2:
 ```
@@ -76,7 +80,7 @@ B	purple,darkred,lightgreen
 C	lightblue
 D	darkgreen,grey,pink
 ```
-![](DatasetStroke_stroke_color_more_examples_2.png)
+![](images/DatasetStroke_stroke_color_more_examples_2.png)
 
 example 3:
 ```
@@ -90,10 +94,10 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetStroke_stroke_color_more_examples_3.png)
+![](images/DatasetStroke_stroke_color_more_examples_3.png)
 Have fun!!
 
-{anchor:use 'darker' or 'brighter' as stroke color}
+{anchor:use}
 ### use 'darker' or 'brighter' as stroke color
 When color is specified and is not 'black' or 'white', users can now use darker or brighter version of the sepcified color as stroke color.
 For example, the following usages are all valid:
@@ -122,6 +126,6 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetStroke_barplot_use_darker_lighter_as_strokecolor_without_annotation.png)
+![](images/DatasetStroke_barplot_use_darker_lighter_as_strokecolor_without_annotation.png)
 
 [<< previous section: Dataset overview](DatasetOverview)      |       [next section: Pie charts >>](DatasetPieCharts)

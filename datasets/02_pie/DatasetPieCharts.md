@@ -1,26 +1,28 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Pie charts
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#examples](#examples)
-* [#show data value](#show-data-value)
-* [#add pie charts to trees with collapsed internal nodes](#add-pie-charts-to-trees-with-collapsed-internal-nodes)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [examples](#examples)
+* [show data value](#show-data-value)
+* [add pie charts to trees with collapsed internal nodes](#add-pie-charts-to-trees-with-collapsed-internal-nodes)
+
 {anchor:overview}
 ### Overview
 Pies will be displayed on internal and leaf branches.
 Here is an example:
-![](DatasetPieCharts_piechart_overview.png)
+![](images/DatasetPieCharts_piechart_overview.png)
 User can upload multiple pie-chart datasets to a tree, but only one can be displayed at a time.
 Using the control panel on the page left, user can control which one can be displayed:
-![](DatasetPieCharts_piechart_usercontrol.png)
+![](images/DatasetPieCharts_piechart_usercontrol.png)
 
 {anchor:modifiers}
 ### Supported modifiers
 Supported Key-Value pairs for pie charts:
-||Key (case insensitive)||Value||Description||
+Key (case insensitive)|Value|Description
+----------------------|-----|-----------
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
@@ -68,12 +70,13 @@ Saccharomyces_cerevisiae,Yarrowia_lipolytica	0,26
 Saccharomyces_cerevisiae,Neurospora_crassa	0,169
 ```
 _**important!**_
-# an internal branch / node is identified by the names of two leaf nodes; the former is the last common ancestor of the latter
-# the values of an internal branches are separated by ",", e.g. 0,19
-# the number of values of all internal nodes should be the same (two in this dataset)
-# the same number of colors should be provided by "!colors" ("#9F0251,#4D8963" in this case)
-# and the same number of "groups" should also provided by "!groups"
-![](DatasetPieCharts_peichart_example1.png)
+* an internal branch / node is identified by the names of two leaf nodes; the former is the last common ancestor of the latter
+* the values of an internal branches are separated by ",", e.g. 0,19
+* the number of values of all internal nodes should be the same (two in this dataset)
+* the same number of colors should be provided by "!colors" ("#9F0251,#4D8963" in this case)
+* and the same number of "groups" should also provided by "!groups"
+![](images/DatasetPieCharts_peichart_example1.png)
+
 dataset 2: overlap with other duplicates
 ```
 # for evolview; Yeast
@@ -93,9 +96,10 @@ Saccharomyces_cerevisiae,Candida_albicans	0,0,18,42
 Saccharomyces_cerevisiae,Yarrowia_lipolytica	0,0,11,16
 Saccharomyces_cerevisiae,Neurospora_crassa	0,0,28,143
 ```
-![](DatasetPieCharts_peichart_example2.png)
+![](images/DatasetPieCharts_peichart_example2.png)
 
 {anchor:show data value}
+
 ### Show data values
 First, let's see an example using the same tree as above:
 ```
@@ -118,16 +122,19 @@ Saccharomyces_cerevisiae,Candida_albicans	0,0,9,51
 Saccharomyces_cerevisiae,Yarrowia_lipolytica	0,0,7,20
 Saccharomyces_cerevisiae,Neurospora_crassa	0,0,20,151
 ```
-![](DatasetPieCharts_piechart_showdatavalue2.png)
+![](images/DatasetPieCharts_piechart_showdatavalue2.png)
 The 'value' of the 'key' !showdataValue can be any combination of the following, separated by a ",":
-|| ||alternative value||description||
+ modifiers|alternative value|description
+ --|----------------|-----------
 |show = 1|0|show or hide data values; optional; the data values will be shown if omitted|
 |fontsize=12|any integer|set font size; optional; default = 10|
 |fontcolor=red|any valid HTML color name such as 'darkred' and hex color code such as '#FF0000' |set text color; optional; default = black|
 |fontitalic=1|0|set font italic; optional; default = 0|
-**more examples will be added ... **
+
+**more examples will be added ...**
+
 {anchor:add pie charts to trees with collapsed internal nodes}
 ### Add pie charts to trees with collapsed internal nodes
-Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add pie charts to a collapsed tree. See [here](DatasetCollapseInternalNodes#piecharts) for more information.
+Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add pie charts to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 
 [<< previous section: stroke styles](DatasetStroke)      |       [next section: Bar chart>>](DatasetBars)

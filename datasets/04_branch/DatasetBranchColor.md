@@ -1,25 +1,26 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Branch colors
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#data](#data)
-* [#examples](#examples)
-* [#add branch color to a collapsed tree](#add-branch-color-to-a-collapsed-tree)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [data](#data)
+* [examples](#examples)
+* [add branch color to a collapsed tree](#add-branch-color-to-a-collapsed-tree)
 
 {anchor:overview}
 ### Overview
 Branch colors will be applied to tree branches.
 Similar to pie charts, multiple datasets for branch colors can be uploaded to a tree, but only one can be shown at a time.
 Here is an example:
-![](DatasetBranchColor_ev.branch.001.png)
+![](images/DatasetBranchColor_ev.branch.001.png)
 
 {anchor:modifiers}
 ### Supported modifiers
 Supported Key-Value pairs for branch colors:
-||Key (case insensitive)||Value||Description||
+|Key (case insensitive)|Value|Description|
+|----------------------|-----|-----------|
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
 |!LegendColors or !Colors|comma separated color codes or names|colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ; note the number of colors should match the number of legend fields|
@@ -55,10 +56,11 @@ By default, the color will only apply to the specified branch; for example:
 ## branch color/ styles
 human	red
 ```
-![](DatasetBranchColor_branchcolor_example1.png)
+![](images/DatasetBranchColor_branchcolor_example1.png)
 ----
 By adding a third column, the default behavior can be changed. Here is a list of choices of this column:
-||Option (case insensitive)||Description||
+|Option (case insensitive)|Description|
+|-------------------------|-----------|
 |ad|apply color to all descendants|
 |prefix|apply color to all branches connecting leaf nodes whose name starts with the string specified by the first column|
 |suffix|apply color to all branches connecting leaf nodes whose name ends with the string specified by the first column|
@@ -73,26 +75,26 @@ Example 1, 'ad':
 ## branch color
 human,mouse	red	ad
 ```
-![](DatasetBranchColor_branchcolor_example2.png)
+![](images/DatasetBranchColor_branchcolor_example2.png)
 ----
 Example 2, 'prefix':
 ```
 ch	red	prefix
 ```
-![](DatasetBranchColor_branchcolor_example3.png)
+![](images/DatasetBranchColor_branchcolor_example3.png)
 ----
 Example 3, 'suffix':
 ```
 n	red	prefix
 ```
-![](DatasetBranchColor_branchcolor_example3.png)
+![](images/DatasetBranchColor_branchcolor_example3.png)
 ----
 Example 4, 'toroot':
 ```
 ## branch color from specified leaf node to the root
 human	red	toroot
 ```
-![](DatasetBranchColor_branchcolor_toroot.png)
+![](images/DatasetBranchColor_branchcolor_toroot.png)
 {anchor:add branch color to a collapsed tree}
 ### add branch color to a collapsed tree
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add branch color to a collapsed tree. See [here](DatasetCollapseInternalNodes#branchcolors) for more information.

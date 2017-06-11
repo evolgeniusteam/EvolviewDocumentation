@@ -1,24 +1,26 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Bars
 
 ### Index
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#examples](#examples)
-* [#show data value](#show-data-value)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [examples](#examples)
+* [show data value](#show-data-value)
 
 {anchor:overview}
 ### Overview
 Bar charts will be displayed next to leaf labels. For example:
-![](DatasetBars_bars_ev.barcharts.001.png)
+![](images/DatasetBars_bars_ev.barcharts.001.png)
 Multiple bar-chart datasets can be uploaded to a tree and shown next to each other; uploaded datasets can be managed using the control panel:
-![](DatasetBars_bars_ev.barcharts.002.png)
+![](images/DatasetBars_bars_ev.barcharts.002.png)
 
 {anchor:modifiers}
+
 ### Supported modifiers
 The following 'modifiers' (Key-Value pairs) are supported for bar charts:
-||Key (case insensitive)||Value||Description||
+Key (case insensitive)|Value|Description
+----------------------|-----|-----------
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
@@ -37,12 +39,12 @@ The following 'modifiers' (Key-Value pairs) are supported for bar charts:
 |!Fanplot or ! Fan|none|works only with circular tree; see examples bellow|
 |**new: show data values**|see section show data value for more details| |
 _**notes on preparing your datasets!!**_
-# please always use TAB to separate the modifiers and their values.
-# some modifiers should not be used in combination, e.g. !itemHeightPX and !itemHeightPCT.
-# However if both are used (accidentally), only !itemHeightPX be used.
-# if a modifier is used (accidentally) multiple tiles, only the last one will be used.
-# the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
-# please also always use TAB to separate the columns in the data section.
+1. please always use TAB to separate the modifiers and their values.
+2. some modifiers should not be used in combination, e.g. !itemHeightPX and !itemHeightPCT.
+3. However if both are used (accidentally), only !itemHeightPX be used.
+4. if a modifier is used (accidentally) multiple tiles, only the last one will be used.
+5. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
+6. please also always use TAB to separate the columns in the data section.
 
 {anchor:examples}
 ### Examples
@@ -65,14 +67,14 @@ B	10,20,1
 C	8,9,2
 D	20,3,4
 ```
-![](DatasetBars_barcharts_example1.png)
+![](images/DatasetBars_barcharts_example1.png)
 
 Example 2 (the same as the first one, with the following additional lines):
 ```
 ## turn grid on
 !grid
 ```
-![](DatasetBars_barcharts_example2.png)
+![](images/DatasetBars_barcharts_example2.png)
 
 Example 3 (the same as the first one, with the following additional lines):
 ```
@@ -81,14 +83,14 @@ Example 3 (the same as the first one, with the following additional lines):
 !grid
 !align
 ```
-![](DatasetBars_barcharts_example3.png)
+![](images/DatasetBars_barcharts_example3.png)
 
 Example 4:
 ```
 ## fan plot of the bars in circular mode
 !Fanplot
 ```
-![](DatasetBars_barcharts_example4.png)
+![](images/DatasetBars_barcharts_example4.png)
 
 Example 5:
 ```
@@ -102,7 +104,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_barcharts_example5.png)
+![](images/DatasetBars_barcharts_example5.png)
 
 Example 6:
 ```
@@ -117,7 +119,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_barcharts_example6.png)
+![](images/DatasetBars_barcharts_example6.png)
 _**heights of individual bars**_
 By default, the height of an individual bar is 10 pixel, it can be changed using two modifiers:
 * !itemHeightPX
@@ -135,7 +137,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_barcharts_example_height1.png)
+![](images/DatasetBars_barcharts_example_height1.png)
 Example 2 on item/bar height:
 ```
 !groups	group 1,group 2,group 3
@@ -147,7 +149,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_barcharts_example_height2.png)
+![](images/DatasetBars_barcharts_example_height2.png)
 Example 3 on bar height:
 ```
 !groups	group 1,group 2,group 3
@@ -161,7 +163,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_barcharts_example_height3.png)
+![](images/DatasetBars_barcharts_example_height3.png)
 
 **!itemHeightPCT** specifies the percentage of available space taken by a bar; its value ranges from 1 to 100.
 Example 4 on bar height:
@@ -175,7 +177,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_barcharts_example_height4.png)
+![](images/DatasetBars_barcharts_example_height4.png)
 Example 5 on bar height:
 ```
 !groups	group 1,group 2,group 3
@@ -188,12 +190,12 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_barcharts_example_height5.png)
+![](images/DatasetBars_barcharts_example_height5.png)
 Example 6 on bar height:
 ```
 ## --
 ```
-![](DatasetBars_barcharts_example_height6.png)
+![](images/DatasetBars_barcharts_example_height6.png)
 
 {anchor:show data value}
 ### Show data values
@@ -219,9 +221,9 @@ C	8,9,7
 D	20,5,20
 ```
 and the result:
-![](DatasetBars_bars_showdatavalue_example2.png)
+![](images/DatasetBars_bars_showdatavalue_example2.png)
 A bit more details on supported features:
-![](DatasetBars_bars_showdatavalue_attributes.png)
+![](images/DatasetBars_bars_showdatavalue_attributes.png)
 The 'value' of the 'key' !showdataValue can be any combination of the following, separated by a ",":
 || ||alternative value||description||
 |show = 1|0|show or hide data values; optional; the data values will be shown if omitted|
@@ -245,7 +247,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_bars_showdatavalue_example.png)
+![](images/DatasetBars_bars_showdatavalue_example.png)
 Example 2 on show data value, align the values to the end of the bars:
 ```
 !groups	group 1,group 2,group 3
@@ -262,7 +264,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_bars_showdatavalue_example3.png)
+![](images/DatasetBars_bars_showdatavalue_example3.png)
 Example 3 on show data value, align the values to the start of the bars:
 ```
 !groups	group 1,group 2,group 3
@@ -279,7 +281,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
-![](DatasetBars_bars_showdatavalue_example4.png)
+![](images/DatasetBars_bars_showdatavalue_example4.png)
 
 
 [<< previous section: Pie charts](DatasetPieCharts)      |       [next section: Branch color >>](DatasetBranchColor)

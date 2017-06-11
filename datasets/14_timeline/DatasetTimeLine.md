@@ -1,8 +1,8 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Heatmap
 ### Table of contents
-* [#overview](#overview)
+* [overview](#overview)
 * [the !TimeLine modifier](#timeline)
 * [1. the !TimeLineAxis modifier (Axis plot)](#timelineaxis)
 * [2. the !TimeLineLines modifier (Line plot)](#timelinelines)
@@ -28,7 +28,7 @@ The tree:
         Grid=0
 ```
 resulting visualisation:
-![](DatasetTimeLine_timeline01.png)
+![](images/DatasetTimeLine_timeline01.png)
 
 ... another example dataset ....
 ```
@@ -44,13 +44,14 @@ resulting visualisation:
         StripMarginPx=3
 ```
 resulting visualisation:
-![](DatasetTimeLine_timeline02.png)
+![](images/DatasetTimeLine_timeline02.png)
 
 {anchor:timeline}
 ### the '!TimeLine' modifier
 The '!TimeLine' modifier is mandatory for all the following three types of timeline plots, the value of this modifier can be any combination of the following, separated by a ",":
 The following 'modifiers' (Key-Value pairs) are supported for heatmap:
-||(case insensitive)||Alternative value||Mandatory||Description||
+|(case insensitive)|Alternative value|Mandatory|Description|
+|------------------|-----------------|---------|-----------|
 |totaltime=70|any float number > 0|Y|Total time from the root to the most distant leaf|
 |TimeUnit=Millions of Years|any string|N|Time unit|
 **_please note:_**
@@ -64,7 +65,8 @@ The following 'modifiers' (Key-Value pairs) are supported for heatmap:
 {anchor:timelineaxis}
 ### 1. the '!timeLineAxis' modifier  (Axis plot)
 This modifier defines an axis and related parameters; the value of this modifier can be any combination of the following, separated by a ",":
-||(case insensitive)||Alternative value||Mandatory||Description||
+|(case insensitive)|Alternative value|Mandatory|Description|
+|------------------|-----------------|---------|-----------|
 |pos=Top|Bottom|N|position (above or at the bottom of the tree) at which the axis will be plotted; default=top|
 |Ticks=10,5,1|any float numbers|Y|positions at which the 'major', 'minor' and 'other' ticks will be plotted; ticks=10 means a major tick will be plotted every 10 TimeUnit; ticks=10,5 means in addition to major ticks, a minor tick will be plotted every 5 TimeUnit; see examples below for details|
 |TickLabels=A,B,C|any strings or numbers|N|customized labels for major ticks; by default, the tick labels are their corresponding values; see examples below|
@@ -90,7 +92,7 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_pos_top.png)
+![](images/DatasetTimeLine_timeline_pos_top.png)
 ----
 2. Axis at bottom:
 ```
@@ -103,7 +105,7 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_pos_bottom.png)
+![](images/DatasetTimeLine_timeline_pos_bottom.png)
 ----
 3. major tick only:
 ```
@@ -116,7 +118,7 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_tick_majoronly.png)
+![](images/DatasetTimeLine_timeline_tick_majoronly.png)
 ----
 4. major and minor ticks:
 ```
@@ -129,7 +131,7 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_tick_majorminor.png)
+![](images/DatasetTimeLine_timeline_tick_majorminor.png)
 ----
 5. major, minor and other ticks:
 ```
@@ -142,7 +144,7 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_tick_all.png)
+![](images/DatasetTimeLine_timeline_tick_all.png)
 ----
 6. customized tick label:
 ```
@@ -156,7 +158,7 @@ Datasets:
     TickLabels=A,B,C,D,E,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_tick_label.png)
+![](images/DatasetTimeLine_timeline_tick_label.png)
 ----
 7. customized tick colors:
 ```
@@ -171,7 +173,7 @@ Datasets:
     TickColors=red,blue,green,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_tick_colors.png)
+![](images/DatasetTimeLine_timeline_tick_colors.png)
 ----
 8. tick label styles:
 ```
@@ -186,7 +188,7 @@ Datasets:
     TickColors=red,blue,green,
     Grid=0
 ```
-![](DatasetTimeLine_timeline_ticklabel_styles.png)
+![](images/DatasetTimeLine_timeline_ticklabel_styles.png)
 ----
 9. show grid lines:
 ```
@@ -201,13 +203,14 @@ Datasets:
     ## show grid line
     Grid=1
 ```
-![](DatasetTimeLine_timeline_axis_grid.png)
+![](images/DatasetTimeLine_timeline_axis_grid.png)
 ----
 
 {anchor:timelinelines}
 ### 2. the '!timeLineLines' modifier  (Line plot)
 This modifier defines a set of time points at which lines will be plotted; this modifier can also be used to annotate these lines and control the visualisation styles of the lines. The value of this modifier can be any combination of the following, separated by a ",":
-||(case insensitive)||Alternative value||Mandatory||Description||
+|(case insensitive)|Alternative value|Mandatory|Description|
+|------------------|-----------------|---------|-----------|
 |op=0.9|any float number between 0~1|N|opacity of the lines; default = 1|
 |lines=0,10,25,33,56|any float numbers separated by ','|Y|time points at which lines will be plotted;|
 |LineWidths=1,2|any float number or numbers|N|line widths; default = 1; if the number of widths is less than the number of lines, these widths will be cycled.|
@@ -237,7 +240,7 @@ The tree:
 	LineLabelStyle=12,black,1,1,
 	lineLabelPos=bottom
 ```
-![](DatasetTimeLine_timeline_lines_all.png)
+![](images/DatasetTimeLine_timeline_lines_all.png)
 ----
 
 2. some simple lines:
@@ -247,7 +250,7 @@ The tree:
 !TimeLineLines    
 	Lines=4,25,56,70
 ```
-![](DatasetTimeLine_timeline_lines_01.png)
+![](images/DatasetTimeLine_timeline_lines_01.png)
 ----
 3. with line styles ('solid' and 'dashed'):
 ```
@@ -259,7 +262,7 @@ The tree:
         # line styles
 	LineStyles=solid,dashed
 ```
-![](DatasetTimeLine_timeline_lines_02.png)
+![](images/DatasetTimeLine_timeline_lines_02.png)
 ----
 4. with line widths:
 ```
@@ -271,7 +274,7 @@ The tree:
 	LineStyles=solid,dashed,
 	lineWidths=1,2,4
 ```
-![](DatasetTimeLine_timeline_lines_03.png)
+![](images/DatasetTimeLine_timeline_lines_03.png)
 ----
 5. line colors:
 ```
@@ -284,7 +287,7 @@ The tree:
 	lineWidths=1,2,4,
 	lineColors=pink,blue,darkred
 ```
-![](DatasetTimeLine_timeline_lines_04.png)
+![](images/DatasetTimeLine_timeline_lines_04.png)
 ----
 6. line labels:
 ```
@@ -298,7 +301,7 @@ The tree:
 	lineColors=pink,blue,darkred,
 	LineLabels=A,B,C
 ```
-![](DatasetTimeLine_timeline_lines_05.png)
+![](images/DatasetTimeLine_timeline_lines_05.png)
 ----
 7. line label styles:
 ```
@@ -313,13 +316,14 @@ The tree:
 	LineLabels=A,B,C,
 	LineLabelStyle=12,black,1,1
 ```
-![](DatasetTimeLine_timeline_lines_06.png)
+![](images/DatasetTimeLine_timeline_lines_06.png)
 ----
 
 {anchor:timelinestrips}
 ### 3. the !TimeLineStrips modifier (Strip plot)
 This modifier defines a set of color strips to be plotted behind the trees; users will be allowed to annotate the strips and control their visualisation styles. The value of this modifier can be any combination of the following, separated by a ",":
-||(case insensitive)||Alternative value||Mandatory||Description||
+|(case insensitive)|Alternative value|Mandatory|Description|
+|------------------|-----------------|---------|-----------|
 |op=0.9|any float number between 0~1|N|opacity of the strips (does not apply to the labels); default = 1|
 |strips=0,10,25,33,56|any float numbers separated by ','|Y|time points for strips; note: '0,10' defines a strip between 0~10; '0,10,25' defines two strips, 0~10 and 10~25; '0,10,25,33' defines three strips;|
 |StripColors=red,blue,green|any valid HTML color names or hex colors, separated by ','|N|fill-colors for the strips; if the number of colors is less than the number of strips, these colors will be cycled; default == black|
@@ -350,9 +354,9 @@ Datasets and visualisation results:
 	StripLabelPos=bottom,
         ShowTimeUnit=0
 ```
-![](DatasetTimeLine_strips_01.png)
+![](images/DatasetTimeLine_strips_01.png)
 ... in circular mode:
-![](DatasetTimeLine_strips_02_circular.png)
+![](images/DatasetTimeLine_strips_02_circular.png)
 ----
 2. two strips (actually there are three strips, but the 2nd one is 'white'):
 ```
@@ -368,7 +372,7 @@ Datasets and visualisation results:
 	StripLabelPos=bottom,
     ShowTimeUnit=0
 ```
-![](DatasetTimeLine_strips_02.png)
+![](images/DatasetTimeLine_strips_02.png)
 ----
 
 

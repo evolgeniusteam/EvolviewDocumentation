@@ -1,13 +1,13 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Leaf colors
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#data](#data)
-* [#examples](#examples)
-* [#add leaf color to a collapsed tree](#add-leaf-color-to-a-collapsed-tree)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [data](#data)
+* [examples](#examples)
+* [add leaf color to a collapsed tree](#add-leaf-color-to-a-collapsed-tree)
 
 {anchor:overview}
 ### Overview
@@ -16,7 +16,8 @@ Leaf colors will change the colors of leaf labels. Similar to branch colors, mul
 {anchor:modifiers}
 ### Supported modifiers
 Supported Key-Value pairs for leaf colors:
-||Key (case insensitive)||Value||Description||
+|Key (case insensitive)|Value|Description|
+|----------------------|-----|-----------|
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
 |!LegendColors or !Colors|comma separated color codes or names|colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ; note the number of colors should match the number of legend fields|
@@ -53,9 +54,10 @@ By default, the color will only apply to the specified leaf label; for example:
 ## leaf color
 human	red
 ```
-![](DatasetLeafColor_leafcolor_example.png)
+![](images/DatasetLeafColor_leafcolor_example.png)
 By adding a third column, the default behavior can be changed. Here is a list of choices of this column:
-||Option (case insensitive)||Description||
+|Option (case insensitive)|Description|
+|-------------------------|-----------|
 |ad|apply color to the leaf labels of all descendants|
 |prefix|apply color to all leaf labels that start with the string specified by the first column|
 |suffix|apply color to all leaf labels that end with the string specified by the first column|
@@ -69,30 +71,30 @@ Example 1, 'ad':
 ## leaf color
 human,mouse	pink	ad
  ```
-![](DatasetLeafColor_leafcolor_example2.png)
+![](images/DatasetLeafColor_leafcolor_example2.png)
 ----
 Example 2, 'prefix':
 ```
 ## leaf color
 ch	yellow	prefix
 ```
-![](DatasetLeafColor_leafcolor_prefix.png)
+![](images/DatasetLeafColor_leafcolor_prefix.png)
 ----
 Example 3, 'suffix':
 ```
 ## leaf color
 n	blue	suffix
 ```
-![](DatasetLeafColor_leafcolor_suffix.png)
+![](images/DatasetLeafColor_leafcolor_suffix.png)
 ----
 Example 4, 'anywhere'
 ```
 ## leaf color
 m	purple	anywhere
 ```
-![](DatasetLeafColor_leafcolor_anywhere.png)
+![](images/DatasetLeafColor_leafcolor_anywhere.png)
 {anchor:add leaf color to a collapsed tree}
 ### Add leaf color to a collapsed tree
-Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add leaf color to a collapsed tree. See [here](DatasetCollapseInternalNodes#LeafAndLeafBKcolors) for more information.
+Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add leaf color to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 
 [<< previous section: Branch color](DatasetBranchColor)      |       [next section: Leaf background color >>](DatasetLeafBKColor)

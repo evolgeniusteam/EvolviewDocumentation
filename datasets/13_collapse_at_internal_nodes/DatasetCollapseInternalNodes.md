@@ -1,23 +1,23 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Collapse at internal nodes
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#specify the internal node(s) to collapse](#specify-the-internal-node(s)-to-collapse)
-* [#size of the triangles](#size-of-the-triangles)
-* [#customise the collapsed nodes](#customise-the-collapsed-nodes)
-* [#add datasets to a collapsed tree](#add-datasets-to-a-collapsed-tree)
-	* [#branchColors](#branchColors)
-	* [#LeafAndLeafBKcolors](#LeafAndLeafBKcolors)
-	* [#colorstrips](#colorstrips)
-	* [#piecharts](#piecharts)
-	* [#leaflabeldecoreations](#leaflabeldecoreations)
-	* [#grouplabel](#grouplabel)
-	* [#dotplots](#dotplots)
-	* [#heatmap](#heatmap)
-	* [#columnplots](#columnplots)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [specify the internal node(s) to collapse](#specify-the-internal-node(s)-to-collapse)
+* [size of the triangles](#size-of-the-triangles)
+* [customise the collapsed nodes](#customise-the-collapsed-nodes)
+* [add datasets to a collapsed tree](#add-datasets-to-a-collapsed-tree)
+	* [branchColors](#branchColors)
+	* [LeafAndLeafBKcolors](#LeafAndLeafBKcolors)
+	* [colorstrips](#colorstrips)
+	* [piecharts](#piecharts)
+	* [leaflabeldecoreations](#leaflabeldecoreations)
+	* [grouplabel](#grouplabel)
+	* [dotplots](#dotplots)
+	* [heatmap](#heatmap)
+	* [columnplots](#columnplots)
 
 {anchor:overview}
 ### Overview
@@ -29,15 +29,16 @@ _**Please note**_
 * this feature does **NOT** work in "slanted cladogram" mode
 
 Datasets can be uploaded using the following button on the toolbar:
-![](DatasetCollapseInternalNodes_collapse_internally_toolbar.png)
+![](images/DatasetCollapseInternalNodes_collapse_internally_toolbar.png)
 Here is an example:
-![](DatasetCollapseInternalNodes_collapse_internal_nodes.png)
+![](images/DatasetCollapseInternalNodes_collapse_internal_nodes.png)
 
 
 {anchor:modifiers}
 ### Supported modifiers
 We didn't introduce new modifiers for this annotation type; only the following universal modifiers related to legends are supported:
-||Key (case insensitive)||Value||Description||
+|Key (case insensitive)|Value|Description|
+|----------------------|-----|-----------|
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
 |!LegendColors or !Colors|comma separated color codes or names|colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ; note the number of colors should match the number of legend fields|
@@ -49,15 +50,15 @@ The data part contains a list of internal nodes at which the tree should collaps
 ```
 (A,(B,(C,(D,E)2DE)CDE3)BC3DE)ROOT;
 ```
-![](DatasetCollapseInternalNodes_a_very_simple_tree.png)
+![](images/DatasetCollapseInternalNodes_a_very_simple_tree.png)
 Now we try to collapse the tree at the last common ancestor of the leaf nodes "C" and "E". The simplest way is to upload a dataset with the following content:
 ```
 C,E
 ```
-![](DatasetCollapseInternalNodes_collapse_data_01.png)
+![](images/DatasetCollapseInternalNodes_collapse_data_01.png)
 ----
 Alternatively, users can point to the internal node by using its "internal id" or name (if available); to find out such information, simply mouseover the internal node of interest:
-![](DatasetCollapseInternalNodes_mouse_over_internal_node.png)
+![](images/DatasetCollapseInternalNodes_mouse_over_internal_node.png)
 Therefore the above dataset is equivalent to:
 ```
 ## internal id
@@ -79,7 +80,7 @@ This tree does not have named internal nodes, so we use leaf nodes to define the
 A,B
 C,D
 ```
-![](DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png)
+![](images/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png)
 {anchor:size of the triangles}
 ### Size of the triangles
 The **_height_** of a triangle is proportional to the number of leaf nodes that the corresponding internal node contains, it is calculated using the equation:
@@ -89,7 +90,7 @@ The **_height_** of a triangle is proportional to the number of leaf nodes that 
 while the **_width_** of the triangle is defined by "horizontal scale".
 
 The "vertical scale" and "horizontal scale" can be changed/ specified using the toolbar (the "Basic" tab):
-![](DatasetCollapseInternalNodes_toolbar_scales.png)
+![](images/DatasetCollapseInternalNodes_toolbar_scales.png)
 
 {anchor:customise the collapsed nodes}
 ### Customise the collapsed nodes
@@ -121,7 +122,7 @@ The tree:
 A,B
 C,D
 ```
-![](DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png)
+![](images/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png)
 {anchor:branchColors}
 #### Branch colors
 ```
@@ -129,7 +130,7 @@ C,D
 INT3	lightblue
 E	darkgreen
 ```
-![](DatasetCollapseInternalNodes_branchcolor1.png)
+![](images/DatasetCollapseInternalNodes_branchcolor1.png)
 ----
 ```
 ## 'ad' works but the 'prefix' and 'suffix' do not
@@ -137,7 +138,7 @@ E	darkgreen
 ## 'ad' means that the color 'red' would be applied to all its descendants.
 INT3,INT4	red	ad
 ```
-![](DatasetCollapseInternalNodes_branchcolor2.png)
+![](images/DatasetCollapseInternalNodes_branchcolor2.png)
 see [here](DatasetBranchColor) for more about branch colors.
 {anchor:LeafAndLeafBKcolors}
 #### Leaf colors and leaf background colors
@@ -147,7 +148,7 @@ E	darkred
 INT3	pink
 INT4	green
 ```
-![](DatasetCollapseInternalNodes_leafcolors01.png)
+![](images/DatasetCollapseInternalNodes_leafcolors01.png)
 ----
 ```
 ## leaf bk color
@@ -155,7 +156,7 @@ INT3	lightblue
 INT4	lightgreen
 E	pink
 ```
-![](DatasetCollapseInternalNodes_leafbkcolor01.png)
+![](images/DatasetCollapseInternalNodes_leafbkcolor01.png)
 please see [here](DatasetLeafColor) for more information on leaf colors, and [here](DatasetLeafBKColor) for leaf background colors.
 {anchor:colorstrips}
 #### Color shapes and strips
@@ -168,9 +169,9 @@ A,B	red,green,blue
 INT4	lightblue
 E	darkgreen,grey,pink
 ```
-![](DatasetCollapseInternalNodes_colorstrips01.png)
+![](images/DatasetCollapseInternalNodes_colorstrips01.png)
 ... in circular mode:
-![](DatasetCollapseInternalNodes_colorstrips02.png)
+![](images/DatasetCollapseInternalNodes_colorstrips02.png)
 {anchor:piecharts}
 
 {anchor:leaflabeldecoreations}
@@ -184,7 +185,7 @@ C,D	triangle,white:darker
 ## -- a leaf node
 E	rect,green:darker
 ```
-![](DatasetCollapseInternalNodes_leafdeco01.png)
+![](images/DatasetCollapseInternalNodes_leafdeco01.png)
 {anchor:grouplabel}
 ### Group label
 ```
@@ -192,9 +193,9 @@ E	rect,green:darker
 INT3,INT4	text=group 1,textorientation=vertical
 E	text=mammal,color=darkgreen,linewidth=4,fontsize=16,bkcolor=green
 ```
-![](DatasetCollapseInternalNodes_grouplabelstyle1_01.png)
+![](images/DatasetCollapseInternalNodes_grouplabelstyle1_01.png)
 ... in circular mode:
-![](DatasetCollapseInternalNodes_grouplabelstyle1_01_circular.png)
+![](images/DatasetCollapseInternalNodes_grouplabelstyle1_01_circular.png)
 {anchor:dotplots}
 ### Dot plots
 ```
@@ -224,7 +225,7 @@ A,B	20,20,20
 INT4	8,9,7
 E	20,20,20
 ```
-![](DatasetCollapseInternalNodes_dotplots01.png)
+![](images/DatasetCollapseInternalNodes_dotplots01.png)
 
 {anchor:heatmap}
 ### Heatmap
@@ -248,7 +249,7 @@ INT3	7,9,10,4
 C,D	-2,3,5,25
 E	16,12,19,4
 ```
-![](DatasetCollapseInternalNodes_heatmap01.png)
+![](images/DatasetCollapseInternalNodes_heatmap01.png)
 {anchor:columnplots}
 ### Column plots
 ```
@@ -272,7 +273,7 @@ namedcolumn=fast evolving,color=lightgreen:darker
 	from=INT3,to=E
 	from=INT4,style=none,text=*,textangle=0,width=20
 ```
-![](DatasetCollapseInternalNodes_columnplots01.png)
+![](images/DatasetCollapseInternalNodes_columnplots01.png)
 
 
 [<< previous section: Column plots](DatasetColumnPlots)  |       [next section: Time Line >>](DatasetTimeLine)

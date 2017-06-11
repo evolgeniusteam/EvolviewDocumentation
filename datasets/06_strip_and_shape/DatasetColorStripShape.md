@@ -1,26 +1,27 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Color strip and color shapes
 
 ### Table of contents
-* [#overview](#overview)
-* [#modifiers](#modifiers)
-* [#examples](#examples)
-* [#add color strips to collapsed trees](#add-color-strips-to-collapsed-trees)
+* [overview](#overview)
+* [modifiers](#modifiers)
+* [examples](#examples)
+* [add color strips to collapsed trees](#add-color-strips-to-collapsed-trees)
 
 {anchor:overview}
 ### Overview
 Color strips and color shapes will be shown next to the leaf labels. Multiple datasets can be uploaded and displayed.
 Here is an example:
-![](DatasetColorStripShape_ev.strips.010.png)
+![](images/DatasetColorStripShape_ev.strips.010.png)
 the differences between 'rect' and 'strip' are:
 * strip by default will take all available space of a leaf label, while rect will only take 80%
 * strip looks like the following in circular mode, while rect remains the same.
-![](DatasetColorStripShape_ev.strips.002.png)
+![](images/DatasetColorStripShape_ev.strips.002.png)
 
 {anchor:modifiers}
 ### Supported modifiers
-||Key (case insensitive)||Value||Description||
+|Key (case insensitive)|Value|Description|
+|----------------------|-----|-----------|
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
@@ -39,12 +40,12 @@ the differences between 'rect' and 'strip' are:
 |!stripHeightPCT|float number between 1 to 100|percentage of available height taken each strip, see examples bellow|
 |!checkLineWidth or !checklwd|integer > 0|line width of the 'check' symbol, see examples bellow|
 **_notes on preparing your datasets!!_**
-# please always use TAB to separate the modifiers and their values.
-# modifier !type controls the number of shapes to be shown next to leaf labels
-# the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
+1. please always use TAB to separate the modifiers and their values.
+2. modifier !type controls the number of shapes to be shown next to leaf labels
+3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
 	* the first column contains the name of a single leaf node
 	* the second column contains comma (,) delimited colors; if the number of colors is less than the number of shapes, the colors will be recycled
-# please also always use TAB to separate the columns in the data section.
+4. please also always use TAB to separate the columns in the data section.
 
 {anchor:examples}
 ### Examples
@@ -65,7 +66,7 @@ rat	lightblue
 chimp	grey,darkgreen,grey,pink
 human	orange,red,yellow,lightblue
 ```
-![](DatasetColorStripShape_colorstrips_example1.png)
+![](images/DatasetColorStripShape_colorstrips_example1.png)
 ----
 **_notes on plot width, widths and heights of individual shapes_**
 Here is how widths and heights of individual shapes are calculated:
@@ -84,7 +85,7 @@ B	purple,darkred,lightgreen
 C	lightblue
 D	darkgreen,grey,pink
 ```
-![](DatasetColorStripShape_colorstrips_example2.png)
+![](images/DatasetColorStripShape_colorstrips_example2.png)
 ----
 Example 3, '!plotWidth':
 ```
@@ -97,7 +98,7 @@ B	purple,darkred,lightgreen
 C	lightblue
 D	darkgreen,grey,pink
 ```
-![](DatasetColorStripShape_colorstrips_plotwidth.png)
+![](images/DatasetColorStripShape_colorstrips_plotwidth.png)
 ----
 Example 4, 'itemHeightPCT':
 ```
@@ -111,7 +112,7 @@ B	purple,darkred,lightgreen
 C	lightblue
 D	darkgreen,grey,pink
 ```
-![](DatasetColorStripShape_colorstrips_heightPCT.png)
+![](images/DatasetColorStripShape_colorstrips_heightPCT.png)
 ----
 Example 5, '!stripHeightPCT':
 ```
@@ -124,10 +125,10 @@ B	purple,darkred,lightgreen
 C	lightblue
 D	darkgreen,grey,pink
 ```
-![](DatasetColorStripShape_colorstrips_heightPCT80.png)
+![](images/DatasetColorStripShape_colorstrips_heightPCT80.png)
 ----
 Example 6, the same as previous dataset, and the tree is plotted in circular mode:
-![](DatasetColorStripShape_colorstrips_heightPCT80circular.png)
+![](images/DatasetColorStripShape_colorstrips_heightPCT80circular.png)
 ----
 Example 7, '!checkLineWidth':
 ```
@@ -140,7 +141,7 @@ B	purple,darkred,lightgreen
 C	lightblue
 D	darkgreen,grey,pink
 ```
-![](DatasetColorStripShape_colorstrips_checkwidth.png)
+![](images/DatasetColorStripShape_colorstrips_checkwidth.png)
 
 ----
 Example 8, '!recycleColor' or '!colorRecycle':
@@ -167,7 +168,7 @@ rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
 ```
-![](DatasetColorStripShape_colorrecycle.png)
+![](images/DatasetColorStripShape_colorrecycle.png)
 
 ----
 Example 9, '!recycleColor' or '!colorRecycle':
@@ -189,13 +190,9 @@ rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
 ```
-![](DatasetColorStripShape_colorrecycle2.png)
+![](images/DatasetColorStripShape_colorrecycle2.png)
 
 ----
 {anchor:add color strips to collapsed trees}
 ### add color strips to collapsed trees
-See [here](DatasetCollapseInternalNodes#colorstrips) for details on adding color strips to a collapsed tree.
-
-
-
-[<< previous section: Leaf background colors](DatasetLeafBKColor)      |       [next section: Protein domains>>](DatasetProteinDomain)
+See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for details on adding color strips to a collapsed tree.

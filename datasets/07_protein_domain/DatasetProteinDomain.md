@@ -1,21 +1,21 @@
-_Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+*Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.*
 
 ## Protein domains
 
 ### Index
-* [#overview](#overview)
-* [#automatic retrieval of domain annotations from PFAM](#automatic-retrieval-of-domain-annotations-from-PFAM)
-* [#write domain annotations by hand](#write-domain-annotations-by-hand)
-* [#modifiers](#modifiers)
-* [#examples](#examples)
-* [#issues](#issues)
+* [overview](#overview)
+* [automatic retrieval of domain annotations from PFAM](#automatic-retrieval-of-domain-annotations-from-PFAM)
+* [write domain annotations by hand](#write-domain-annotations-by-hand)
+* [modifiers](#modifiers)
+* [examples](#examples)
+* [issues](#issues)
 
 {anchor:overview}
 ### Overview
 To upload a dataset for domain annotations, user can simply go to the "Annotation upload" tab, and click the "protein domain" icon:
-![](DatasetProteinDomain_proteindomain_toolbar.png)
+![](images/DatasetProteinDomain_proteindomain_toolbar.png)
 A dialogbox will then appear:
-![](DatasetProteinDomain_proteindomain_popup.png)
+![](images/DatasetProteinDomain_proteindomain_popup.png)
 User can choose to either copy and paste the contents of the dataset by hand, upload from a text file, or retrieve automatically from public resources like PFAM.
 
 {anchor:automatic retrieval of domain annotations from PFAM}
@@ -103,7 +103,7 @@ KLH31_DANRE:0.04945)0.96:0.5586)0.76:0.2286,KLH30_XENLA:1.462)0.099:0.209,
 ```
 Second, go to the "Annotation upload" tab, click the "protein domain" icon, and then click the "retrieve data from PFAM" icon in the dialogbox. User will get a busy message during the data retrieval.
 Last, click the "Submit" button if there is no error, the domains will be plotted next to the tree (only partial plot is shown):
-![](DatasetProteinDomain_proteindomain.png)
+![](images/DatasetProteinDomain_proteindomain.png)
 
 {anchor:write domain annotations by hand}
 ### Write domain annotations by hand
@@ -116,7 +116,7 @@ The first two columns are protein name and protein length, respectively. The thi
 **Columns are separated by a single 'tab' symbol**, so that user can prepare the annotation using any standard spreadsheet program (for example Office Excel, iWorks Numbers and LibreOffice Calc).
 
 Typically a domain-architecture column contains the following nine fields separated by ","s:
-![](DatasetProteinDomain_proteindomain_domainstructure.png)
+![](images/DatasetProteinDomain_proteindomain_domainstructure.png)
 in which the first two are mandatory; the rest can be left blank if not available.
 
 For example, the following domain annotations are all valid:
@@ -132,7 +132,8 @@ For example, the following domain annotations are all valid:
 
 {anchor:modifiers}
 ### Supported modifiers
-||Key (case insensitive)||Value||Description||
+|Key (case insensitive)|Value|Description|
+|----------------------|-----|-----------|
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendColors or !Colors|comma separated color codes or names|colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ;note the number of colors should match the number of legend fields|
@@ -149,8 +150,8 @@ For example, the following domain annotations are all valid:
 |!shadow or !showShadow|0 or 1|1: show drop shadow under non-PFAM-B domains; WARNING: if shadow is on, exporting to graphical formats other than SVG is NOT functional!!|
 
 **_notes on preparing your datasets!!_**
-# please always use TAB to separate the modifiers and their values.
-# please also always use TAB to separate the columns in the data section.
+1. please always use TAB to separate the modifiers and their values.
+2. please also always use TAB to separate the columns in the data section.
 
 
 {anchor:examples}
@@ -160,5 +161,3 @@ more examples will be added.
 {anchor:issues}
 ### Known issues
 Exporting to graphical formats other than SVG is not functional if '!shadow' option is on.
-
-[<< previous section: Color shapes and strips ](DatasetColorStripShape)      |       [next section: Leaf label decorations >>](DatasetLeafLabelDeco)

@@ -1,9 +1,9 @@
 ### Dataset Overview
 
 #### A dataset typically consists of three sections
-* [#annotation](#annotation)
-* [#modifiers](#modifiers) and
-* [#data](#data)
+* [annotation](#annotation)
+* [modifiers](#modifiers) and
+* [data](#data)
 Let's see some example first:
 ```
 ## -- here is an example dataset of a barplot;
@@ -40,7 +40,9 @@ KA pairs are used to specify or change certain default settings / behavior of a 
 * to change the width, height or opacity of the dataset
 * in some cases, the attribute part of a KA-pair is optional.
 Here are a list of KA-pairs common to all datasets; dataset-specific KA-pairs will be introduced later.
-||Key (case insensitive)||Value||Description||
+
+|Key (case insensitive)|Value|Description|
+|-----------------------|-----|----------|
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
 |!LegendColors or !Colors|comma separated color codes or names|colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ; note the number of colors should match the number of legend fields|
@@ -51,6 +53,7 @@ Here are a list of KA-pairs common to all datasets; dataset-specific KA-pairs wi
 _**please always use TAB to separate the modifiers and their values!!**_
 
 {anchor:data}
+
 ##### Data
 Data are usually tab-delimited three-column texts; the first two columns are often mandatory, the third one is often optional.
 
