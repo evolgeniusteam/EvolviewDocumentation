@@ -22,7 +22,7 @@ Using the control panel on the page left, user can control which one can be disp
 ### Supported modifiers
 Supported Key-Value pairs for pie charts:
 Key (case insensitive)|Value|Description
-----------------------|-----|-----------
+|----------------------|-----|-----------|
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
