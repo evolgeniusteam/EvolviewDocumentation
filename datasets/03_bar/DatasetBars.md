@@ -3,22 +3,30 @@
 ## Bars
 
 ### Index
+
 * [overview](#overview)
 * [modifiers](#modifiers)
 * [examples](#examples)
 * [show data value](#show-data-value)
 
 {anchor:overview}
+
 ### Overview
+
 Bar charts will be displayed next to leaf labels. For example:
+
 ![](images/DatasetBars_bars_ev.barcharts.001.png)
+
 Multiple bar-chart datasets can be uploaded to a tree and shown next to each other; uploaded datasets can be managed using the control panel:
+
 ![](images/DatasetBars_bars_ev.barcharts.002.png)
 
 {anchor:modifiers}
 
 ### Supported modifiers
+
 The following 'modifiers' (Key-Value pairs) are supported for bar charts:
+
 Key (case insensitive)|Value|Description
 ----------------------|-----|-----------
 |**universal modifiers**| | |
@@ -38,7 +46,9 @@ Key (case insensitive)|Value|Description
 |!align or !alignIndividualColumn|none|align individual columns if the bars are stacked|
 |!Fanplot or ! Fan|none|works only with circular tree; see examples bellow|
 |**new: show data values**|see section show data value for more details| |
+
 _**notes on preparing your datasets!!**_
+
 1. please always use TAB to separate the modifiers and their values.
 2. some modifiers should not be used in combination, e.g. !itemHeightPX and !itemHeightPCT.
 3. However if both are used (accidentally), only !itemHeightPX be used.
@@ -47,13 +57,17 @@ _**notes on preparing your datasets!!**_
 6. please also always use TAB to separate the columns in the data section.
 
 {anchor:examples}
+
 ### Examples
+
 The tree :
+
 ```
 (A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
 ```
 
 Example 1:
+
 ```
 ##barplots
 !groups	2009,2010,2011
@@ -67,32 +81,40 @@ B	10,20,1
 C	8,9,2
 D	20,3,4
 ```
+
 ![](images/DatasetBars_barcharts_example1.png)
 
 Example 2 (the same as the first one, with the following additional lines):
+
 ```
 ## turn grid on
 !grid
 ```
+
 ![](images/DatasetBars_barcharts_example2.png)
 
 Example 3 (the same as the first one, with the following additional lines):
+
 ```
 ## turn grid on
 ## align individual columns
 !grid
 !align
 ```
+
 ![](images/DatasetBars_barcharts_example3.png)
 
 Example 4:
+
 ```
 ## fan plot of the bars in circular mode
 !Fanplot
 ```
+
 ![](images/DatasetBars_barcharts_example4.png)
 
 Example 5:
+
 ```
 ## grid and grid label
 !groups	group 1,group 2,group 3
@@ -104,9 +126,11 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_barcharts_example5.png)
 
 Example 6:
+
 ```
 ## fan plot of the bars in circular mode
 ## and align individual columns
@@ -119,13 +143,19 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_barcharts_example6.png)
+
 _**heights of individual bars**_
+
 By default, the height of an individual bar is 10 pixel, it can be changed using two modifiers:
+
 * !itemHeightPX
 * !itemHeightPCT
 **!itemHeightPX** specifies the absolute pixel height for individual bars; its value ranges from >0 to 40. Here are some examples:
+
 Example 1 on item/ bar height:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -137,8 +167,11 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_barcharts_example_height1.png)
+
 Example 2 on item/bar height:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -149,8 +182,11 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_barcharts_example_height2.png)
+
 Example 3 on bar height:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -163,10 +199,12 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_barcharts_example_height3.png)
 
 **!itemHeightPCT** specifies the percentage of available space taken by a bar; its value ranges from 1 to 100.
 Example 4 on bar height:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -177,8 +215,11 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_barcharts_example_height4.png)
+
 Example 5 on bar height:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -190,21 +231,29 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_barcharts_example_height5.png)
+
 Example 6 on bar height:
+
 ```
 ## --
 ```
+
 ![](images/DatasetBars_barcharts_example_height6.png)
 
 {anchor:show data value}
+
 ### Show data values
 First, let's see an example:
 the tree :
+
 ```
 (A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
 ```
+
 the dataset (copy & paste) :
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -220,18 +269,27 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 and the result:
+
 ![](images/DatasetBars_bars_showdatavalue_example2.png)
+
 A bit more details on supported features:
+
 ![](images/DatasetBars_bars_showdatavalue_attributes.png)
+
 The 'value' of the 'key' !showdataValue can be any combination of the following, separated by a ",":
-|| ||alternative value||description||
+
+key-value|alternative value|description
+---------|-----------------|-----------
 |show = 1|0|show or hide data values; optional; the data values will be shown if omitted|
 |fontsize=12|any integer|set font size; optional; default = 10|
 |fontcolor=red|any value color name|set text color; optional; default = black|
 |fontitalic=1|0|set font italic; optional; default = 0|
 |textalign=middle|start or end|set text align; optional; default = middle; see the following examples|
+
 Example 1 on show data value:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -247,8 +305,11 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_bars_showdatavalue_example.png)
+
 Example 2 on show data value, align the values to the end of the bars:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -264,8 +325,11 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_bars_showdatavalue_example3.png)
+
 Example 3 on show data value, align the values to the start of the bars:
+
 ```
 !groups	group 1,group 2,group 3
 !colors	#028482,#7ABA7A,#B76EB8
@@ -281,6 +345,7 @@ B	10,20,7
 C	8,9,7
 D	20,5,20
 ```
+
 ![](images/DatasetBars_bars_showdatavalue_example4.png)
 
 [<< previous section: pie chart](/datasets/02_pie/DatasetPieCharts.md)      |       [next section: branch color >>](/datasets/04_branch/DatasetBranchColor.md)

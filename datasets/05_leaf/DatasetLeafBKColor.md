@@ -11,13 +11,18 @@
 
 {anchor:overview}
 ### Overview
+
 leafbackground colors will change the colors of leaf background. Similar to branch colors, multiple datasets can be uploaded to a tree, but only one can be shown at a time.
+
 Here is an example:
+
 ![](images/DatasetLeafBKColor_ev.bkcolor.001.png)
 
 {anchor:modifiers}
+
 ### Supported modifiers
 Supported Key-Value pairs for leaf colors:
+
 |Key (case insensitive)|Value|Description|
 |----------------------|-----|-----------|
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
@@ -29,22 +34,30 @@ Supported Key-Value pairs for leaf colors:
 
 {anchor:data}
 ### the data
+
 Data are usually tab-delimited three-column texts, with the third column optional.
 Let me use the tree below to illustrate the usage of the data:
+
 ```
 (chicken,((mouse,rat),(chimp,human)));
 ```
+
 * **first column: the location**
 the first column dictates where the data to be plotted. It usually contains the name of a leaf node, or two leaf names separated by a ','.
 * one single leaf name dictates that the data will be plotted on / next to / under the leaf or the branch connecting directly to the leaf node
 * two leaf names are often used in combination with an 'ad' at the third column; see the section 'third column' for more details.
+
 For example:
+
 ```
 chicken
 mouse,human
 ```
+
 * **second column: color to be applied**
+
 For example:
+
 ```
 chicken	green
 mouse,human	blue
@@ -52,44 +65,56 @@ mouse,human	blue
 
 * **third column: optional commands to change the default behavior of current line**
 By default, the color will only apply to the specified leaf label; for example:
+
 ```
 ## leaf background color
 mouse	red
 ```
+
 ![](images/DatasetLeafBKColor_leafbk_mouse.png)
 
 By adding a third column, the default behavior can be changed. Here is a list of choices of this column:
+
 |Option (case insensitive)|Description|
 |-------------------------|-----------|
 |ad|apply color to the leaf labels of all descendants|
 |prefix|apply color to all leaf labels that start with the string specified by the first column|
 |suffix|apply color to all leaf labels that end with the string specified by the first column|
 |anywhere|apply color to leaf labels that contain the string specified by the first column|
+
 See examples below.
 
 {anchor:examples}
 ### Examples
 Example 1, 'ad':
+
 ```
 ## leaf background color
 human,mouse	lightblue	ad
  ```
+
 ![](images/DatasetLeafBKColor_leafbk_ad.png)
 ----
+
 Example 2, 'prefix':
+
 ```
 ## leaf background color
 mouse,human	grey	ad
 ch	yellow	prefix
 ```
+
 ![](images/DatasetLeafBKColor_leafbk_ad_prefix.png)
 ----
+
 Example 3, 'suffix':
+
 ```
 ## leaf background color
 chicken,human	grey	ad
 n	blue	suffix
 ```
+
 ![](images/DatasetLeafBKColor_leafbk_ad_suffix.png)
 ----
 {anchor:add leaf background color to a collapsed tree}

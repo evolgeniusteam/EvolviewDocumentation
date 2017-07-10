@@ -14,11 +14,14 @@
 * please consult the tree 'TimeLines' in the DEMOS project to see TimeLine plots in action
 
 First, let's see some examples.
+
 The tree:
 ```
 (a,(d,(b:0.2,c:0.3):0.4):0.3);
 ```
+
 ... and an example dataset:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -28,10 +31,13 @@ The tree:
 	TickLabelStyle=10,grey,0,0,
         Grid=0
 ```
+
 resulting visualisation:
+
 ![](images/DatasetTimeLine_timeline01.png)
 
 ... another example dataset ....
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -44,17 +50,21 @@ resulting visualisation:
 	StripLabelPos=bottom,
         StripMarginPx=3
 ```
+
 resulting visualisation:
+
 ![](images/DatasetTimeLine_timeline02.png)
 
 {anchor:timeline}
 ### the '!TimeLine' modifier
 The '!TimeLine' modifier is mandatory for all the following three types of timeline plots, the value of this modifier can be any combination of the following, separated by a ",":
 The following 'modifiers' (Key-Value pairs) are supported for heatmap:
+
 |(case insensitive)|Alternative value|Mandatory|Description|
 |------------------|-----------------|---------|-----------|
 |totaltime=70|any float number > 0|Y|Total time from the root to the most distant leaf|
 |TimeUnit=Millions of Years|any string|N|Time unit|
+
 **_please note:_**
 * TimeLine plot supports multi-line key-value pairs, i.e. the modifier and its value can be split into multiple line, as long as they are written in the correct format; see examples above.
 **_notes on preparing your datasets!!_**
@@ -66,6 +76,7 @@ The following 'modifiers' (Key-Value pairs) are supported for heatmap:
 {anchor:timelineaxis}
 ### 1. the '!timeLineAxis' modifier  (Axis plot)
 This modifier defines an axis and related parameters; the value of this modifier can be any combination of the following, separated by a ",":
+
 |(case insensitive)|Alternative value|Mandatory|Description|
 |------------------|-----------------|---------|-----------|
 |pos=Top|Bottom|N|position (above or at the bottom of the tree) at which the axis will be plotted; default=top|
@@ -77,12 +88,14 @@ This modifier defines an axis and related parameters; the value of this modifier
 
 #### Examples
 The tree:
+
 ```
 (a,(d,(b:0.2,c:0.3):0.4):0.3);
 ```
 
 Datasets:
 1. Axis on top:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -93,9 +106,13 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_pos_top.png)
+
 ----
+
 2. Axis at bottom:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -106,9 +123,13 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_pos_bottom.png)
+
 ----
+
 3. major tick only:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -119,9 +140,13 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_tick_majoronly.png)
+
 ----
+
 4. major and minor ticks:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -132,9 +157,13 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_tick_majorminor.png)
+
 ----
+
 5. major, minor and other ticks:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -145,9 +174,13 @@ Datasets:
 	TickLabelStyle=10,grey,0,0,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_tick_all.png)
+
 ----
+
 6. customized tick label:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -159,9 +192,13 @@ Datasets:
     TickLabels=A,B,C,D,E,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_tick_label.png)
+
 ----
+
 7. customized tick colors:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -174,9 +211,13 @@ Datasets:
     TickColors=red,blue,green,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_tick_colors.png)
+
 ----
+
 8. tick label styles:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -189,9 +230,13 @@ Datasets:
     TickColors=red,blue,green,
     Grid=0
 ```
+
 ![](images/DatasetTimeLine_timeline_ticklabel_styles.png)
+
 ----
+
 9. show grid lines:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -204,12 +249,15 @@ Datasets:
     ## show grid line
     Grid=1
 ```
+
 ![](images/DatasetTimeLine_timeline_axis_grid.png)
+
 ----
 
 {anchor:timelinelines}
 ### 2. the '!timeLineLines' modifier  (Line plot)
 This modifier defines a set of time points at which lines will be plotted; this modifier can also be used to annotate these lines and control the visualisation styles of the lines. The value of this modifier can be any combination of the following, separated by a ",":
+
 |(case insensitive)|Alternative value|Mandatory|Description|
 |------------------|-----------------|---------|-----------|
 |op=0.9|any float number between 0~1|N|opacity of the lines; default = 1|
@@ -222,11 +270,13 @@ This modifier defines a set of time points at which lines will be plotted; this 
 
 #### Examples
 The tree:
+
 ```
 (a,(d,(b:0.2,c:0.3):0.4):0.3);
 ```
 
 1. a timeline line plot will all available parameters:
+
 ```
 ## note: in any timeline plot, the !TimeLine modifier is always mandatory --
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
@@ -241,19 +291,26 @@ The tree:
 	LineLabelStyle=12,black,1,1,
 	lineLabelPos=bottom
 ```
+
 ![](images/DatasetTimeLine_timeline_lines_all.png)
+
 ----
 
 2. some simple lines:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
 !TimeLineLines    
 	Lines=4,25,56,70
 ```
+
 ![](images/DatasetTimeLine_timeline_lines_01.png)
+
 ----
+
 3. with line styles ('solid' and 'dashed'):
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -263,8 +320,11 @@ The tree:
         # line styles
 	LineStyles=solid,dashed
 ```
+
 ![](images/DatasetTimeLine_timeline_lines_02.png)
+
 ----
+
 4. with line widths:
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
@@ -275,9 +335,13 @@ The tree:
 	LineStyles=solid,dashed,
 	lineWidths=1,2,4
 ```
+
 ![](images/DatasetTimeLine_timeline_lines_03.png)
+
 ----
+
 5. line colors:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -288,9 +352,13 @@ The tree:
 	lineWidths=1,2,4,
 	lineColors=pink,blue,darkred
 ```
+
 ![](images/DatasetTimeLine_timeline_lines_04.png)
+
 ----
+
 6. line labels:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -302,9 +370,13 @@ The tree:
 	lineColors=pink,blue,darkred,
 	LineLabels=A,B,C
 ```
+
 ![](images/DatasetTimeLine_timeline_lines_05.png)
+
 ----
+
 7. line label styles:
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -317,12 +389,15 @@ The tree:
 	LineLabels=A,B,C,
 	LineLabelStyle=12,black,1,1
 ```
+
 ![](images/DatasetTimeLine_timeline_lines_06.png)
+
 ----
 
 {anchor:timelinestrips}
 ### 3. the !TimeLineStrips modifier (Strip plot)
 This modifier defines a set of color strips to be plotted behind the trees; users will be allowed to annotate the strips and control their visualisation styles. The value of this modifier can be any combination of the following, separated by a ",":
+
 |(case insensitive)|Alternative value|Mandatory|Description|
 |------------------|-----------------|---------|-----------|
 |op=0.9|any float number between 0~1|N|opacity of the strips (does not apply to the labels); default = 1|
@@ -336,9 +411,11 @@ This modifier defines a set of color strips to be plotted behind the trees; user
 
 #### Examples
 The tree:
+
 ```
 (a,(d,(b:0.2,c:0.3):0.4):0.3);
 ```
+
 Datasets and visualisation results:
 
 1. a single strip:
@@ -355,11 +432,17 @@ Datasets and visualisation results:
 	StripLabelPos=bottom,
         ShowTimeUnit=0
 ```
+
 ![](images/DatasetTimeLine_strips_01.png)
+
 ... in circular mode:
+
 ![](images/DatasetTimeLine_strips_02_circular.png)
+
 ----
+
 2. two strips (actually there are three strips, but the 2nd one is 'white'):
+
 ```
 !TimeLine	TotalTime=70,TimeUnit=Millions of Years
 
@@ -373,7 +456,9 @@ Datasets and visualisation results:
 	StripLabelPos=bottom,
     ShowTimeUnit=0
 ```
+
 ![](images/DatasetTimeLine_strips_02.png)
+
 ----
 
 

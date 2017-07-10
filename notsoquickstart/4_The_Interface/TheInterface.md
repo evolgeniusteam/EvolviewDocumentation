@@ -10,14 +10,16 @@ Table of contents
 
 The main user interface consists mainly six components:
 
-1 a header bar. Several widgets are included, including
-* a "account setting" button; for registered users only
-* a "Logout" button.
-2 a logo (may be changed over time)
-3 a browser panel. Projects and tress for current user will be shown here. Datasets of activated trees will be also shown.
-4 a disclosure panel. Click it to hide/ show the logo and the browser panel (to maximize the canvas area (6)).
-5 a tool bar (contents may change over time).
-6 a canvas to display the active tree.
+1. a header bar. Several widgets are included, including
+   * a "account setting" button; for registered users only
+   * a "Logout" button.
+
+2. a logo (may be changed over time)
+3. a browser panel. Projects and tress for current user will be shown here. Datasets of activated trees will be also shown.
+4. a disclosure panel. Click it to hide/ show the logo and the browser panel (to maximize the canvas area (6)).
+5. a tool bar (contents may change over time).
+6. a canvas to display the active tree.
+
 ![](images/TheInterface_interface_overview.png)
 
 {anchor:toolbar}
@@ -28,6 +30,7 @@ The functions of the icons are quite straightforward; mouse over the icons to sh
 
 {anchor:canvas}
 ### The canvas
+
 The canvas displays your active tree (only once at a time) and active datasets. With the canvas users can :
 * change canvas size
 * drag the tree around

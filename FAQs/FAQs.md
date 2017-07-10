@@ -17,4 +17,5 @@ Here is a workaround using Google Chrome:
 * find the "SVG" element;
 * right click on the "SVG", select "Copy" -> "Copy element" from the popup menu;
 * paste the copied contents into a newly created text file and save it as a SVG file.
+
 ![](images/FAQs_faq_save_largefile.png)

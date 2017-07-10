@@ -1,4 +1,5 @@
 ### Supported browsers
+
 Browser | Version | Operating systems |Download link
 --------|---------|-------------------|-------------
 Google Chrome/ Chromium (note 1)|>= 12 |All|[https://www.google.com/chrome](https://www.google.com/chrome)

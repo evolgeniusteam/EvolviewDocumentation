@@ -12,20 +12,30 @@
 
 {anchor:overview}
 ### Overview
+
 To upload a dataset for domain annotations, user can simply go to the "Annotation upload" tab, and click the "protein domain" icon:
+
 ![](images/DatasetProteinDomain_proteindomain_toolbar.png)
+
 A dialogbox will then appear:
+
 ![](images/DatasetProteinDomain_proteindomain_popup.png)
+
 User can choose to either copy and paste the contents of the dataset by hand, upload from a text file, or retrieve automatically from public resources like PFAM.
 
 {anchor:automatic retrieval of domain annotations from PFAM}
 ### automatic retrieval of domain annotations from PFAM
+
 To retrieve domains automatically from PFAM, user can simply click the green button "retrieve data from PFAM" (see figure above).
+
 EvolView uses leaf names of current active tree to query PFAM database using the PFAM URL API. For example, if a leaf name is "KLF9_HUMAN", the URL to retrieve data will look like:
+
 ```
 http://pfam.xfam.org/protein/KLF9_HUMAN?output=xml
 ```
+
 The retrieved data is in XML format, as shown bellow:
+
 ```
 <xml version="1.0" encoding="UTF-8">
 <!-- information on UniProt entry Q13886 (KLF9_HUMAN), generated: 12:24:51 15-May-2012 -->
@@ -58,11 +68,14 @@ hmm_start="2" hmm_end="24" evalue="5.4e-05" bitscore="32.80" />
   </entry>
 </pfam>
 ```
+
 EvolView will parse the retrieved data, and paste the results to the text box bellow the button.
 By default, several "modifiers" will be automatically generated and added to the beginning of the dataset (see the figure above).
 
 **_Now let's show an example of retrieving annotation from PFAM._**
+
 First, we add the following tree to a project:
+
 ```
 ((((((((KLH20_XENLA:0.2153,((Q86BQ6_DROME:0.2096,Q7PXP7_ANOGA:0.1568)0.85:0.2135,
 ((Q6PFE1_MOUSE:0.1521,Q6PGA3_MOUSE:0.2172)0.76:0.07388,Q8CCY1_MOUSE:0.1753)
@@ -101,25 +114,33 @@ KLH31_DANRE:0.04945)0.96:0.5586)0.76:0.2286,KLH30_XENLA:1.462)0.099:0.209,
 (Q6DE07_XENLA:0.4094,(KLH26_MOUSE:0.5299,KLH36_HUMAN:1.102)0:0.09303)0.93:0.4958)
 0.12:0.124)0.77:0.173)0.83:0.00212);
 ```
+
 Second, go to the "Annotation upload" tab, click the "protein domain" icon, and then click the "retrieve data from PFAM" icon in the dialogbox. User will get a busy message during the data retrieval.
 Last, click the "Submit" button if there is no error, the domains will be plotted next to the tree (only partial plot is shown):
+
 ![](images/DatasetProteinDomain_proteindomain.png)
 
 {anchor:write domain annotations by hand}
 ### Write domain annotations by hand
+
 A typical domain annotation for a protein looks like the following:
+
 ```
 KLF9_HUMAN	244	189,212,zf-H2C2_2,Pfam-A,,,PF13465,5.4e-05,32.80	159,186,zf-H2C2_2,Pfam-A,,,PF13465,0.0036,27.00
 ```
+
 The first two columns are protein name and protein length, respectively. The third and four columns are two domains for this protein. More columns can be appended to the end of the same line.
 
 **Columns are separated by a single 'tab' symbol**, so that user can prepare the annotation using any standard spreadsheet program (for example Office Excel, iWorks Numbers and LibreOffice Calc).
 
 Typically a domain-architecture column contains the following nine fields separated by ","s:
+
 ![](images/DatasetProteinDomain_proteindomain_domainstructure.png)
+
 in which the first two are mandatory; the rest can be left blank if not available.
 
 For example, the following domain annotations are all valid:
+
 ```
 159,186
 159,186,WD40
@@ -132,6 +153,7 @@ For example, the following domain annotations are all valid:
 
 {anchor:modifiers}
 ### Supported modifiers
+
 |Key (case insensitive)|Value|Description|
 |----------------------|-----|-----------|
 |**universal modifiers**| | |

@@ -14,12 +14,14 @@
 For example by default colors will be recycled:
 
 The tree:
+
 ```
 (chicken,((mouse,rat),(chimp,human)));
 ```
-----
-```
 
+----
+
+```
 ##color strips
 !type	strip,rect,circle,star,check,triangle
 !showlegends	1
@@ -36,12 +38,13 @@ rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
 ```
+
 ![](/whatisnew/images/WhatsNew_colorrecycle2.png)
 
 ----
 However, set  '!recycleColor' or '!colorRecycle' to 0 will stop cycling the colors:
-```
 
+```
 ##color strips
 !type	strip,rect,circle,star,check,triangle
 !showlegends	1
@@ -63,7 +66,9 @@ rat	lightblue,white:lightblue
 chimp	grey,darkgreen:brighter,grey:darker,pink:darker
 human	orange,red,white:gold,lightblue
 ```
+
 ![](images/WhatsNew_colorrecycle.png)
+
 ----
 
 ### Dec 29, 2016
@@ -84,15 +89,23 @@ human	orange,red,white:gold,lightblue
 
 Here is an example:
 1. the original tree:
+
 ![](images/WhatsNew_tree_vis_styles_02.png)
+
 ----
+
 2. in combination with style 1:
+
 ![](images/WhatsNew_tree_vis_styles_03.png)
+
 ----
+
 3. in combination with style 2:
+
 ![](images/WhatsNew_tree_vis_styles_04.png)
 
 To turn on/off the new visualisation styles, use the corresponding icons on the Toolbar (as shown below):
+
 ![](images/WhatsNew_tree_vis_styles_01.png)
 
 ### May 22, 2016;
@@ -103,15 +116,20 @@ To turn on/off the new visualisation styles, use the corresponding icons on the 
 * added support for a new bootstrap value style
 
 here is the tree:
+
 ```
 (A:0.1,(B:0.2,(C:0.3,(D:0.4,E:0.5)40:0.6)80:0.05)100:0.1)90:0.43;
 ```
+
 the dataset:
+
 ```
 ## place=4
 !bootstrapValueStyle	show=1,style=numeric,place=4,color=darkred
 ```
+
 and the visualisation results:
+
 ![](images/WhatsNew_bootstrapvalues_place4.png)
 
 ### May 19, 2016
@@ -150,16 +168,20 @@ See [here](/datasets/14_timeline/DatasetTimeLine.md) for more information and ex
 	* keywords highlight
 
 See the screenshot below:
+
 ![](images/WhatsNew_the_text_editor.png)
 
 ### Jan 28, 2016
 * use scientific numbers as branch lengths
 
 Float numbers less than 0.0001 (1e-4; non-inclusive) will be displayed as scientific numbers. For example, the tree:
+
 ```
 (A:0.0001,(B:0.00002,(C:0.000003,D:0.000004)100:0.05)100:0.1)90:0.43;
 ```
+
 will be visualised as:
+
 ![](images/WhatsNew_tiny_branch_length01.png)
 
 In addition, branch lengths can be directly written as scientific numbers. For example, the following tree will be correctly parsed and visualised:
@@ -167,6 +189,7 @@ In addition, branch lengths can be directly written as scientific numbers. For e
 ```
 (A:1e-2,(B:0.00002,(C:0.000003,D:1.45e-5)100:0.05)100:0.1)90:0.43;
 ```
+
 ![](images/WhatsNew_tiny_branch_length02.png)
 
 ### Jan 26, 2016
@@ -181,6 +204,7 @@ In addition, branch lengths can be directly written as scientific numbers. For e
 	* show a small triangle at the collapsed nodes that is proportional to the number of leaves that the collapsed node contains
 
 Here is an example:
+
 ![](images/WhatsNew_collapse_internal_nodes.png)
 
 See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information and examples.
@@ -189,6 +213,7 @@ See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.
 * now Evolview can correctly parse and display parentheses in leaf node names. As long as they come in pairs, parentheses can be put at anywhere (start, end, middle) of the leaf name; multiple and nested parentheses in a single leaf name are also supported.
 
 For example, the tree below:
+
 ```
 ( ( (
 (A)(NC_1)B(C):0.4,
@@ -198,7 +223,9 @@ C_(NC_3):0.1,
 (D_(NC_4)):0.001)75:0.2 )90:0.3,
 E_(NC_5)_E:0.44 )100:0.3;
 ```
+
 will be visualised as:
+
 ![](images/WhatsNew_leaf_names_with_parentheses.png)
 
 
@@ -208,14 +235,18 @@ will be visualised as:
 ![](images/WhatsNew_example_07.png)
 
 See [here](/datasets/12_column_plot/DatasetColumnPlots.md) for more information.
+
 ### Dec 5, 2015
 * added support for the use of 'darker' or 'brighter' as stroke colors, see the section ['Stroke color and width'](/datasets/01_stroke_color_and_width/DatasetStroke.md) and related sections in the annotation datasets.
+
 for example:
 	* green:darker == use darker green as stroke color; the stroke color is usually 20% darker than the specified color
 	* purple:ligher or purple:brighter == use lighter purple as stroke color; the stroke color will be 20% brighter than the specific color
 
 Here are some examples:
+
 ![](images/WhatsNew_barplot_use_darker_lighter_as_strokecolor.png)
+
 ![](images/WhatsNew_columnplots_popup_annotated.png)
 
 ### Dec 4, 2015
@@ -231,8 +262,11 @@ Here are some examples:
 see [here](/datasets/11_bootstrap/DatasetBootstrapValueStyle.md) for detail.
 
 Here are some examples:
+
 ![](images/WhatsNew_bootstrapValueStyles.png)
+
 ![](images/WhatsNew_bootstrapvalues_circles_with_different_colors.png)
+
 ![](images/WhatsNew_bootstrapvalues_place2.png)
 
 ### Dec 1, 2015
@@ -245,16 +279,19 @@ Here are some examples:
 * added a new option 'valuesToHide' for modifier !showDataValue of the dot plots; below is an example; see here for more information: [values to hide](/datasets/09_dot_plot/DatasetDotplots.md)
 
 ![](images/WhatsNew_dotplot_values_to_hide.png)
+
 ### April 4, 2015
 * bug fixes as always
 * added a new annotation type, [heatmap](/datasets/10_heatmap/DatasetHeatmap.md):
 
 ![](images/WhatsNew_heatMap_explained.png)
+
 ### March 31, 2015
 * bug fixes (there are always bugs somewhere ... )
 * added a new annotation type: [dot plot](/datasets/09_dot_plot/DatasetDotplots.md); here is an example:
 
 ![](images/WhatsNew_dotplots_default_fontcolor.png)
+
 ### March 24, 2015
 * bug fixes
 * updated the pfam domain api
@@ -283,9 +320,11 @@ Here are some examples:
 * added support for the display of data values in pie and bar charts; see trees 'yeast duplicates' and 'bars' in the "DEMOS" project.
 
 [pie chart](/datasets/02_pie/DatasetPieCharts.md):
+
 ![](images/WhatsNew_piechart_showdatavalue.png)
 
 [bar chart](/datasets/03_bar/DatasetBars.md):
+
 ![](images/WhatsNew_bars_showdatavalue_example.png)
 
 ### Sep 23, 2014

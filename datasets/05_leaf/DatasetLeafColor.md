@@ -15,7 +15,9 @@ Leaf colors will change the colors of leaf labels. Similar to branch colors, mul
 
 {anchor:modifiers}
 ### Supported modifiers
+
 Supported Key-Value pairs for leaf colors:
+
 |Key (case insensitive)|Value|Description|
 |----------------------|-----|-----------|
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
@@ -29,20 +31,27 @@ Supported Key-Value pairs for leaf colors:
 ### the data
 Data are usually tab-delimited three-column texts, with the third column optional.
 Let me use the tree below to illustrate the usage of the data:
+
 ```
 (chicken,((mouse,rat),(chimp,human)));
 ```
+
 * **first column: the location**
 the first column dictates where the data to be plotted. It usually contains the name of a leaf node, or two leaf names separated by a ','.
 * one single leaf name dictates that the data will be plotted on / next to / under the leaf or the branch connecting directly to the leaf node
 * two leaf names are often used in combination with an 'ad' at the third column; see the section 'third column' for more details.
+
 For example:
+
 ```
 chicken
 mouse,human
 ```
+
 * **second column: color to be applied**
+
 For example:
+
 ```
 chicken	green
 mouse,human	blue
@@ -50,49 +59,66 @@ mouse,human	blue
 
 * **third column: optional commands to change the default behavior of current line**
 By default, the color will only apply to the specified leaf label; for example:
+
 ```
 ## leaf color
 human	red
 ```
+
 ![](images/DatasetLeafColor_leafcolor_example.png)
+
 By adding a third column, the default behavior can be changed. Here is a list of choices of this column:
+
 |Option (case insensitive)|Description|
 |-------------------------|-----------|
 |ad|apply color to the leaf labels of all descendants|
 |prefix|apply color to all leaf labels that start with the string specified by the first column|
 |suffix|apply color to all leaf labels that end with the string specified by the first column|
 |anywhere|apply color to leaf labels that contain the string specified by the first column|
+
 See examples below.
 
 {anchor:examples}
 ### Examples
 Example 1, 'ad':
+
 ```
 ## leaf color
 human,mouse	pink	ad
  ```
+
 ![](images/DatasetLeafColor_leafcolor_example2.png)
 ----
+
 Example 2, 'prefix':
+
 ```
 ## leaf color
 ch	yellow	prefix
 ```
+
 ![](images/DatasetLeafColor_leafcolor_prefix.png)
 ----
+
 Example 3, 'suffix':
+
 ```
 ## leaf color
 n	blue	suffix
 ```
+
 ![](images/DatasetLeafColor_leafcolor_suffix.png)
 ----
+
 Example 4, 'anywhere'
+
 ```
 ## leaf color
 m	purple	anywhere
 ```
+
 ![](images/DatasetLeafColor_leafcolor_anywhere.png)
+
 {anchor:add leaf color to a collapsed tree}
 ### Add leaf color to a collapsed tree
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add leaf color to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.

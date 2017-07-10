@@ -13,17 +13,24 @@
 {anchor:overview}
 ### Overview
 Column plots provides a flexable way of visualising summary information of species in a phylogenetic tree, it was inspired by the figure 6 (the column plots on the right) of a recent publication in eLife:
+
 ![](images/DatasetColumnPlots_elife2015.png)
+
 source: _Laumer, Christopher E., Andreas Hejnol, and Gonzalo Giribet. "Nuclear genomic signals of the ‘microturbellarian’roots of platyhelminth evolutionary innovation." eLife 4 (2015): e05503._
 
 _note_: thanks to Desmond Ramirez of the UCSB who brought this figure to our attention.
+
 here is our implementation in evolview:
+
 ![](images/DatasetColumnPlots_columnplots_popup.png)
 The tree:
+
 ```
 (A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
 ```
+
 ... and the dataset:
+
 ```
 ## --
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45,spacebetweencolumns=15
@@ -50,8 +57,9 @@ namedcolumn=fast evolving,color=lightgreen:darker
 {anchor:modifiers}
 ### Supported modifiers
 Due to the complexity of the plot, we adopted here a new approach for the dataset, thus many so-called universal modifiers are no longer supported except those that are related to the legend. Below are universal modifiers that are still supported by Column plots:
+
 |Key (case insensitive)|Value|Description|
-|--|--|--|
+|----------------------|-----|-----------|
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
 |!LegendStyle or !Style|rect or circle or star|shapes to be plotted before the legend texts; default = rect|
 |!LegendColors or !Colors|comma separated color codes or names|colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ;note the number of colors should match the number of legend fields|
@@ -61,6 +69,7 @@ Due to the complexity of the plot, we adopted here a new approach for the datase
 
 {anchor:the !columnPlots modifier}
 ### the !columnPlots modifier
+
 here we introduce a new modifier **!columnPlots** to allow users to control the following aspect of the plot globally:
 * fill and text color
 * default stroke color
@@ -69,14 +78,19 @@ here we introduce a new modifier **!columnPlots** to allow users to control the 
 * column width and space between columns
 
 **_please note_** all these global options can be overriden by local settings.
+
 A typical !columnPlots would look like the following (NOTE: this is written in one line, not multiple lines):
+
 ```
 !columnPlots    width=10,spaceBetweenColumns=10,color=green:red,strokewidth=1,textangle=-60,style=rect,roundedcorner=5,fontsize=14
 ```
+
 please remember always use a 'TAB' character to separate !columnPlots from its value.
+
 The value of !columnPlots is mandatory; it can be any of the following options, individually or in combination:
+
 |key|alternative value|description|
-|--|--|--|
+|---|-----------------|-----------|
 |width=10|any integer >= 0|set column width, default = 10|
 |spaceBetweenColumns=10|any integer >= 0|set space between columns, default = 10|
 |style=rect|any of the following:none,rect,circle,star,check,triangle|style / shape to be plotted, default = rect|
@@ -111,6 +125,7 @@ As shown in the previous example, a column of data often consists of _**two part
 	* any numbers of the options mentioned in the above table; optional. These options control the displaying styles of current fragment, and overrides the corresponding global options
 
 Here is an example:
+
 ```
 ## a column of data starts with a 'namedcolumn',
 ##it defines global options for the corresponding column
@@ -119,7 +134,9 @@ namedcolumn=thermopiles,color=purple:darker
 	from=A,to=C
 	from=D,color=white:purple,text=?,width=20,style=circle,textangle=0
 ```
+
 ![](images/DatasetColumnPlots_single_column.png)
+
 **_Note_**:
 # the dataset is case-insensitive
 # the indentation at the begining of the framents is optional
@@ -127,6 +144,7 @@ namedcolumn=thermopiles,color=purple:darker
 {anchor:examples}
 ### Examples
 Example 1. a column with two fragments, one span three leaf nodes, while the other spans only one.:
+
 ```
 ## --
 ## -- some global options
@@ -138,9 +156,13 @@ namedcolumn=thermopiles,color=lightblue:darker
 	from=A,to=C
 	from=D
 ```
+
 ![](images/DatasetColumnPlots_example_01.png)
+
 ----
+
 Example 2. try change the style / shape of the fragments, however it only work when a fragment spans only one leaf node:
+
 ```
 ##
 ## -- some global options
@@ -153,9 +175,13 @@ namedcolumn=thermopiles,color=lightblue:darker
     ## but, it will work here
 	from=D,style=star
 ```
+
 ![](images/DatasetColumnPlots_example_02.png)
+
 ----
+
 Example 3. now try change the width of the fragments:
+
 ```
 ##
 ## -- some global options
@@ -166,9 +192,13 @@ namedcolumn=thermopiles,color=lightblue:darker,width=20
 	from=A,to=C,style=star
 	from=D,style=star
 ```
+
 ![](images/DatasetColumnPlots_example_03.png)
+
 ----
+
 Example 4. of course you can change the widths of the fragments individually:
+
 ```
 ##
 ## -- some global options
@@ -180,9 +210,13 @@ namedcolumn=thermopiles,color=lightblue:darker,width=25
 	from=A,to=C,width=10
 	from=D,style=star,width=20
 ```
+
 ![](images/DatasetColumnPlots_example_04.png)
+
 ----
+
 Example 5. we know for sure the first three species are thermophilic, but the last one???
+
 ```
 ##
 ## -- some global options
@@ -192,9 +226,13 @@ namedcolumn=thermopiles,color=#FF33CC:darker,width=25
 	from=A,to=C,width=10
 	from=D,style=circle,color=white:darkgrey,width=20,text=?,textangle=0
 ```
+
 ![](images/DatasetColumnPlots_example_05.png)
+
 ----
+
 Example 6. now we'd like the readers to pay more attention to species A and C:
+
 ```
 ##
 ## -- some global options
@@ -209,9 +247,13 @@ namedcolumn=thermopiles,color=lightblue:darker,width=25
 
 	from=D,style=circle,color=white:darkgrey,width=20,text=?,textangle=0
 ```
+
 ![](images/DatasetColumnPlots_example_06.png)
+
 ----
+
 Example 7. of course we can have multiple columns in a dataset:
+
 ```
 ##
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45,spacebetweencolumns=15
@@ -234,8 +276,11 @@ namedcolumn=fast evolving,color=lightgreen:darker
 	from=B,to=D
 	from=C,style=none,text=*,textangle=0,width=20
 ```
+
 ![](images/DatasetColumnPlots_example_07.png)
+
 ----
+
 _**Please NOTE:**_
 1. the plot is optimized for cladogram and phylogram, thus it wouldn't be as pretty in circular mode
 2. please send us (evolgenius.team@gmail.com) email if you have encountered any problems using EvolView, attach your tree and datasets if necessary

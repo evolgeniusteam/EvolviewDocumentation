@@ -1,5 +1,6 @@
 ## Acknowledgements
 Thanks to all the free tools and open source projects:
+
 Name|Link/URL|Note
 ----|--------|----
 |Google Web Toolkit (GWT)|[http://code.google.com/webtoolkit/](http://code.google.com/webtoolkit/)||
