@@ -24,10 +24,7 @@ Using the control panel on the page left, user can control which one can be disp
 {anchor:modifiers}
 ### Supported modifiers
 Supported Key-Value pairs for pie charts:
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 |Key (case insensitive)|Value|Description|
 |----------------------|-----|-----------|
 |**universal modifiers**| | |
