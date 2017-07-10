@@ -4,12 +4,11 @@
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
-* [data](#data)
+* [modifiers](#supported-modifiers)
+* [data](#the-data)
 * [examples](#examples)
 * [add leaf background color to a collapsed tree](#add-leaf-background-color-to-a-collapsed-tree)
 
-{anchor:overview}
 ### Overview
 
 leafbackground colors will change the colors of leaf background. Similar to branch colors, multiple datasets can be uploaded to a tree, but only one can be shown at a time.
@@ -17,8 +16,6 @@ leafbackground colors will change the colors of leaf background. Similar to bran
 Here is an example:
 
 ![](images/DatasetLeafBKColor_ev.bkcolor.001.png)
-
-{anchor:modifiers}
 
 ### Supported modifiers
 Supported Key-Value pairs for leaf colors:
@@ -32,7 +29,6 @@ Supported Key-Value pairs for leaf colors:
 |!ShowLegends|0 or 1|0 : hide legends; 1 : show legends|
 |!opacity|float number between 0 to 1|opacity of the dataset|
 
-{anchor:data}
 ### the data
 
 Data are usually tab-delimited three-column texts, with the third column optional.
@@ -84,7 +80,6 @@ By adding a third column, the default behavior can be changed. Here is a list of
 
 See examples below.
 
-{anchor:examples}
 ### Examples
 Example 1, 'ad':
 
@@ -94,6 +89,7 @@ human,mouse	lightblue	ad
  ```
 
 ![](images/DatasetLeafBKColor_leafbk_ad.png)
+
 ----
 
 Example 2, 'prefix':
@@ -105,6 +101,7 @@ ch	yellow	prefix
 ```
 
 ![](images/DatasetLeafBKColor_leafbk_ad_prefix.png)
+
 ----
 
 Example 3, 'suffix':
@@ -116,8 +113,9 @@ n	blue	suffix
 ```
 
 ![](images/DatasetLeafBKColor_leafbk_ad_suffix.png)
+
 ----
-{anchor:add leaf background color to a collapsed tree}
+
 ### Add leaf background color to a collapsed tree
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add leaf background color to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 

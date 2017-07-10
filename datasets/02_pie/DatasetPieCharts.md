@@ -4,12 +4,11 @@
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [examples](#examples)
-* [show data value](#show-data-value)
+* [show data value](#show-data-values)
 * [add pie charts to trees with collapsed internal nodes](#add-pie-charts-to-trees-with-collapsed-internal-nodes)
 
-{anchor:overview}
 ### Overview
 Pies will be displayed on internal and leaf branches.
 Here is an example:
@@ -21,7 +20,6 @@ Using the control panel on the page left, user can control which one can be disp
 
 ![](images/DatasetPieCharts_piechart_usercontrol.png)
 
-{anchor:modifiers}
 ### Supported modifiers
 Supported Key-Value pairs for pie charts:
 
@@ -49,7 +47,6 @@ Supported Key-Value pairs for pie charts:
 * if a modifier is used (accidentally) multiple tiles, only the last one will be used.
 * the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
 
-{anchor:examples}
 ### Examples
 The following we will provide you some examples.
 
@@ -114,8 +111,6 @@ Saccharomyces_cerevisiae,Neurospora_crassa	0,0,28,143
 
 ![](images/DatasetPieCharts_peichart_example2.png)
 
-{anchor:show data value}
-
 ### Show data values
 
 First, let's see an example using the same tree as above:
@@ -153,8 +148,6 @@ The 'value' of the 'key' !showdataValue can be any combination of the following,
 |fontitalic=1|0|set font italic; optional; default = 0|
 
 **more examples will be added ...**
-
-{anchor:add pie charts to trees with collapsed internal nodes}
 
 ### Add pie charts to trees with collapsed internal nodes
 

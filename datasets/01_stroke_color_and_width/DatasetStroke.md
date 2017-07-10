@@ -5,11 +5,9 @@
 ### Table of contents
 
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#related-modifiers)
 * [examples](#examples)
-* [use 'darker' or 'brighter' as stroke color](#use)
-
-{anchor:overview}
+* [use 'darker' or 'brighter' as stroke color](#use-darker-or-brighter-as-stroke-color)
 
 ### Overview
 
@@ -44,8 +42,6 @@ fill_color[:stroke_color](_stroke_color)
 
 When the stroke_color is omitted, no stroke will be drawn.
 
-{anchor:modifiers}
-
 ### Related modifiers
 
 _NOTE: not all datasets support these modifiers._
@@ -71,8 +67,6 @@ A default colour can also be specified by the following modifier:
 ```             
 
 and it will be applied to shapes without user-supplied stroke colours.
-
-{anchor:examples}
 
 ### Examples
 
@@ -125,11 +119,9 @@ D	20,5,20
 
 Have fun!!
 
-{anchor:use}
-
 ### use 'darker' or 'brighter' as stroke color
 
-When color is specified and is not 'black' or 'white', users can now use darker or brighter version of the sepcified color as stroke color.
+When color is specified and is not 'black' or 'white', users can now use darker or brighter version of the specified color as stroke color.
 
 For example, the following usages are all valid:
 

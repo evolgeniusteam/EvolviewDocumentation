@@ -1,34 +1,30 @@
 ### Table of contents
 
-* Supported [input](#input) formats
-* Supported [text output](#text-output) formats
-* Supported [graphic output](#graphic-output) formats
+* [Supported input formats](#supported-input-formats)
+* [Supported text output formats](#supported-text-output-formats)
+* [Supported graphic output formats](#supported-graphic-output-formats)
 * [name internal nodes](#name-internal-nodes)
 * [use parentheses in leaf node labels](#use-parentheses-in-leaf-node-labels)
-* Use [#scientific numbers](#scientific-numbers) as branch lengths
+* [Use scientific numbers as branch lengths](#use-scientific-numbers-as-branch-lengths)
 
-{anchor:input}
 ### Supported input formats
 * newick/ phylip
 * nhx
 * nexus
 * phyloXML (partial; embedded annotations will not be parsed by EvolView for now)
 
-{anchor:text}
-### Supported output formats (text files)
+### Supported text output formats
 * newick
 * nhx
 * nexus
 * phyloXML
 
-{anchor:graphic}
-### Supported output formats (graphical files)
+### Supported graphic output formats
 * svg (preferred)
 * pdf
 * png
 * jpeg / jpg
 
-{anchor:name internal nodes}
 ### Name internal nodes
 * use newick format to name internal nodes
 Although Evolview does not support displaying the names of internal nodes (as of Dec 2015), internal nodes can be named. In the newick format, this can be done by adding non-numeric strings next to any right parenthesis in a phylogenetic tree (where the bootstrap values are used to be). For example:
@@ -131,8 +127,6 @@ phyloXML format natively supports named internal nodes and can be parsed correct
 </phyloxml>
 ```
 
-{anchor:use parentheses in leaf node labels}
-
 ### Use parentheses in leaf node labels
 
 Evolview supports the use of parentheses in leaf names. As long as they come in pairs, parentheses can be put at anywhere (start, end, middle) of the leaf name; multiple and nested parentheses in a single leaf name are also supported.
@@ -154,7 +148,6 @@ will be visualised as:
 ![](images/SupportedTreeFormats_leaf_names_with_parentheses.png)
 
 
-{anchor:scientific numbers}
 ### Use scientific numbers as branch lengths
 
 Float numbers less than 0.0001 (1e-4; non-inclusive) will be displayed as scientific numbers. For example, the tree:

@@ -31,16 +31,12 @@ And here is the resulting visualisation:
 
 ![](images/DatasetOverview_example_overview.png)
 
-{anchor:annotation}
-
 ##### Annotation
 
 Lines with the first character as '#' are annotations.
 Annotations are usually at the beginning of a dataset; however if desired, annotation lines can be placed anywhere in a dataset.
 
-{anchor:modifiers}
-
-##### Modifiers / Key-Attribute pairs
+##### Modifiers
 
 KA - pairs usually start with '!', and are separated by a single 'tab' character;
 KA pairs are used to specify or change certain default settings / behavior of a dataset, for example:
@@ -62,8 +58,6 @@ Here are a list of KA-pairs common to all datasets; dataset-specific KA-pairs wi
 |!PlotWidth|integer > 0|pixel width of the dataset on canvas|
 
 _**please always use TAB to separate the modifiers and their values!!**_
-
-{anchor:data}
 
 ##### Data
 

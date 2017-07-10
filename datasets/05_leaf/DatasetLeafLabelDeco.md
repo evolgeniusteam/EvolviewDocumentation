@@ -4,11 +4,10 @@
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [examples](#examples)
 * [add leaf label decoration to collapsed trees](#add-leaf-label-decoration-to-collapsed-trees)
 
-{anchor:overview}
 ### Overview
 Leaf decorations are colour objects / shapes to be shown between the leaf node labels and branches:
 
@@ -50,14 +49,12 @@ Here is an annotated example of the dataset:
 4. star
 5. check
 
-{anchor:modifiers}
 ### Supported modifiers
 
 ```
 !defaultstrokewidth	0.7
 ```
 
-{anchor:examples}
 ### Examples
 
 Example 1:
@@ -72,7 +69,6 @@ D	circle,white:green
 
 ![](images/DatasetLeafLabelDeco_leafdeco_example1.png)
 
-{anchor:add leaf label decoration to collapsed trees}
 ### Add leaf label decoration to collapsed trees
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add leaf label decorations to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 

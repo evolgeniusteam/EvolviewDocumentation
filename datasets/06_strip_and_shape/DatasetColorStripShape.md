@@ -4,11 +4,10 @@
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [examples](#examples)
 * [add color strips to collapsed trees](#add-color-strips-to-collapsed-trees)
 
-{anchor:overview}
 ### Overview
 Color strips and color shapes will be shown next to the leaf labels. Multiple datasets can be uploaded and displayed.
 
@@ -22,7 +21,6 @@ the differences between 'rect' and 'strip' are:
 
 ![](images/DatasetColorStripShape_ev.strips.002.png)
 
-{anchor:modifiers}
 ### Supported modifiers
 
 |Key (case insensitive)|Value|Description|
@@ -54,7 +52,6 @@ the differences between 'rect' and 'strip' are:
 	* the second column contains comma (,) delimited colors; if the number of colors is less than the number of shapes, the colors will be recycled
 4. please also always use TAB to separate the columns in the data section.
 
-{anchor:examples}
 ### Examples
 The tree:
 
@@ -89,6 +86,8 @@ Here is how widths and heights of individual shapes are calculated:
 * for all shapes except strips, when the widths and heights are of different sizes, always the smaller ones will be chosen as their widths and heights
 * by default, strips will take all of the available heights; however, user can change that using two modifiers !stripHeightPX and !stripHeightPCT. When both modifiers are used in the same dataset (by mistake), only !stripHeightPCT will be used.
 
+----
+
 Example 2:
 
 ```
@@ -101,6 +100,7 @@ D	darkgreen,grey,pink
 ```
 
 ![](images/DatasetColorStripShape_colorstrips_example2.png)
+
 ----
 
 Example 3, '!plotWidth':
@@ -117,6 +117,7 @@ D	darkgreen,grey,pink
 ```
 
 ![](images/DatasetColorStripShape_colorstrips_plotwidth.png)
+
 ----
 
 Example 4, 'itemHeightPCT':
@@ -134,6 +135,7 @@ D	darkgreen,grey,pink
 ```
 
 ![](images/DatasetColorStripShape_colorstrips_heightPCT.png)
+
 ----
 
 Example 5, '!stripHeightPCT':
@@ -150,11 +152,13 @@ D	darkgreen,grey,pink
 ```
 
 ![](images/DatasetColorStripShape_colorstrips_heightPCT80.png)
+
 ----
 
 Example 6, the same as previous dataset, and the tree is plotted in circular mode:
 
 ![](images/DatasetColorStripShape_colorstrips_heightPCT80circular.png)
+
 ----
 
 Example 7, '!checkLineWidth':
@@ -173,6 +177,7 @@ D	darkgreen,grey,pink
 ![](images/DatasetColorStripShape_colorstrips_checkwidth.png)
 
 ----
+
 Example 8, '!recycleColor' or '!colorRecycle':
 
 ```
@@ -226,7 +231,6 @@ human	orange,red,white:gold,lightblue
 
 ----
 
-{anchor:add color strips to collapsed trees}
 ### add color strips to collapsed trees
 
 See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for details on adding color strips to a collapsed tree.

@@ -5,16 +5,15 @@ Dot plot is a variant of Bar chart, therefore a dataset for Bar charts can be us
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
-* [the !dotplots modifier](#the-!dotplots-modifier)
+* [modifiers](#supported-modifiers)
+* [the !dotplots modifier](#the-dotplots-modifier)
 * [strokes](#strokes)
-* [show data value](#show-data-value)
-* [hide some values](#hide-some-values)
+* [show data values](#show-data-value)
+* [hide some values](#hide-a-value-or-a-range-of-values)
 * [customise column label styles](#customise-column-label-styles)
 * [examples](#examples)
 * [add dotplots to collapsed trees](#add-dotplots-to-collapsed-trees)
 
-{anchor:overview}
 ### Overview
 Let's see some examples:
 The tree:
@@ -81,7 +80,6 @@ D	20,20,20
 
 ![](images/DatasetDotplots_dotplots_rectangular.png)
 
-{anchor:modifiers}
 ### Supported modifiers
 The following 'modifiers' (Key-Value pairs) are supported for dot plots:
 
@@ -112,7 +110,6 @@ The following 'modifiers' (Key-Value pairs) are supported for dot plots:
 3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
 4. please also always use TAB to separate the columns in the data section.
 
-{anchor:the !dotplots modifier}
 ### The !dotplots modifier
 The 'value' of the modifier **!dotplots** can be any combination of the following, separated by a ",":
 
@@ -127,7 +124,6 @@ shape=circle,margin=2,colwidth=30,roundedcorner=3
 |margin=2|any integer >= 0|set pixel space between columns; optional; default = 0|
 |roundedcorner=1|any integer >= 0|set rounded corner in pixels for rectangular; valid when shape=rect; optional, default = 0|
 
-{anchor:strokes}
 ### Strokes
 User can choose different stroke colors for different columns using the modifier !colors; for example, by simply changing the value of !colors to :
 
@@ -161,7 +157,6 @@ D	20,20,20
 
 ![](images/DatasetDotplots_dotplots_stroke.png)
 
-{anchor:show data value}
 ### Show data value
 The 'value' of the modifier **!showdataValue** can be any combination of the following, separated by a ",":
 
@@ -223,7 +218,6 @@ D	20,20,20
 
 ![](images/DatasetDotplots_dotplots_force_fontwhite.png)
 
-{anchor:hide some values}
 ### Hide a value or a range of values
 Now we are going to hide values from 5 to 9 (inclusive):
 
@@ -247,7 +241,6 @@ D	20,20,20
 
 ![](images/DatasetDotplots_dotplots_values_hidden.png)
 
-{anchor:customise column label styles}
 ### Customise column label styles
 **_NOTE_**: modifier **!columnLabelStyle** is also supported by heatmap.
 The 'value' of the modifier **!columnLabelStyle** can be any combination of the following, separated by a ","; for example:
@@ -294,11 +287,9 @@ D	20,20,20
 
 ![](images/DatasetDotplots_dotplots_column_label_customized.png)
 
-{anchor:examples}
 ### Examples
 More examples will be added.
 
-{anchor:add dotplots to collapsed trees}
 ### Add dotplots to collapsed trees
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add dot plots to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 

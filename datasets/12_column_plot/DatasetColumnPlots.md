@@ -4,13 +4,12 @@
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
-* [the !columnPlots modifier](#the-!columnPlots-modifier)
+* [modifiers](#supported-modifiers)
+* [the !columnPlots modifier](#the-columnplots-modifier)
 * [prepare a column of data for visualisation](#prepare-a-column-of-data-for-visualisation)
 * [examples](#examples)
 * [add column plots to collapsed trees](#add-column-plots-to-collapsed-trees)
 
-{anchor:overview}
 ### Overview
 Column plots provides a flexable way of visualising summary information of species in a phylogenetic tree, it was inspired by the figure 6 (the column plots on the right) of a recent publication in eLife:
 
@@ -54,7 +53,6 @@ namedcolumn=fast evolving,color=lightgreen:darker
 	from=C,style=none,text=*,textangle=0,width=20
 ```
 
-{anchor:modifiers}
 ### Supported modifiers
 Due to the complexity of the plot, we adopted here a new approach for the dataset, thus many so-called universal modifiers are no longer supported except those that are related to the legend. Below are universal modifiers that are still supported by Column plots:
 
@@ -67,7 +65,6 @@ Due to the complexity of the plot, we adopted here a new approach for the datase
 |!ShowLegends|0 or 1|0 : hide legends; 1 : show legends|
 |!opacity|float number between 0 to 1|opacity of the dataset|
 
-{anchor:the !columnPlots modifier}
 ### the !columnPlots modifier
 
 here we introduce a new modifier **!columnPlots** to allow users to control the following aspect of the plot globally:
@@ -109,7 +106,6 @@ When 'darker' or 'brighter'/'lighter' is used, the stroke color will be **_20% d
 
 See [here](/datasets/01_stroke_color_and_width/DatasetStroke.md) for more details.
 
-{anchor:prepare a column of data for visualisation}
 ### prepare a column of data for visualisation
 As shown in the previous example, a column of data often consists of _**two parts**_,
 1. a line of text starts with a mandatory filed 'namedcolumn=name of the column', followed by any numbers of the options mentioned in the table above, for example:
@@ -141,7 +137,6 @@ namedcolumn=thermopiles,color=purple:darker
 # the dataset is case-insensitive
 # the indentation at the begining of the framents is optional
 
-{anchor:examples}
 ### Examples
 Example 1. a column with two fragments, one span three leaf nodes, while the other spans only one.:
 
@@ -286,7 +281,6 @@ _**Please NOTE:**_
 2. please send us (evolgenius.team@gmail.com) email if you have encountered any problems using EvolView, attach your tree and datasets if necessary
 3. please also send us your suggestions and feature requests!
 
-{anchor:add column plots to collapsed trees}
 ### Add column plots to collapsed trees
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add column plots to a collapsed tree. See [here](/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md) for more information.
 

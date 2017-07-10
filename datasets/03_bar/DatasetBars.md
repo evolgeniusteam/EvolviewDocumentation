@@ -5,11 +5,9 @@
 ### Index
 
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [examples](#examples)
-* [show data value](#show-data-value)
-
-{anchor:overview}
+* [show data value](#show-data-values)
 
 ### Overview
 
@@ -20,8 +18,6 @@ Bar charts will be displayed next to leaf labels. For example:
 Multiple bar-chart datasets can be uploaded to a tree and shown next to each other; uploaded datasets can be managed using the control panel:
 
 ![](images/DatasetBars_bars_ev.barcharts.002.png)
-
-{anchor:modifiers}
 
 ### Supported modifiers
 
@@ -50,13 +46,11 @@ Key (case insensitive)|Value|Description
 _**notes on preparing your datasets!!**_
 
 1. please always use TAB to separate the modifiers and their values.
-2. some modifiers should not be used in combination, e.g. !itemHeightPX and !itemHeightPCT.
-3. However if both are used (accidentally), only !itemHeightPX be used.
+2. some modifiers should not be used in combination, e.g. **!itemHeightPX** and **!itemHeightPCT**.
+3. However if both are used (accidentally), only **!itemHeightPX** be used.
 4. if a modifier is used (accidentally) multiple tiles, only the last one will be used.
 5. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
 6. please also always use TAB to separate the columns in the data section.
-
-{anchor:examples}
 
 ### Examples
 
@@ -84,6 +78,8 @@ D	20,3,4
 
 ![](images/DatasetBars_barcharts_example1.png)
 
+----
+
 Example 2 (the same as the first one, with the following additional lines):
 
 ```
@@ -92,6 +88,8 @@ Example 2 (the same as the first one, with the following additional lines):
 ```
 
 ![](images/DatasetBars_barcharts_example2.png)
+
+----
 
 Example 3 (the same as the first one, with the following additional lines):
 
@@ -104,6 +102,8 @@ Example 3 (the same as the first one, with the following additional lines):
 
 ![](images/DatasetBars_barcharts_example3.png)
 
+----
+
 Example 4:
 
 ```
@@ -112,6 +112,8 @@ Example 4:
 ```
 
 ![](images/DatasetBars_barcharts_example4.png)
+
+----
 
 Example 5:
 
@@ -129,6 +131,8 @@ D	20,5,20
 
 ![](images/DatasetBars_barcharts_example5.png)
 
+----
+
 Example 6:
 
 ```
@@ -145,6 +149,8 @@ D	20,5,20
 ```
 
 ![](images/DatasetBars_barcharts_example6.png)
+
+----
 
 _**heights of individual bars**_
 
@@ -170,6 +176,8 @@ D	20,5,20
 
 ![](images/DatasetBars_barcharts_example_height1.png)
 
+----
+
 Example 2 on item/bar height:
 
 ```
@@ -184,6 +192,8 @@ D	20,5,20
 ```
 
 ![](images/DatasetBars_barcharts_example_height2.png)
+
+----
 
 Example 3 on bar height:
 
@@ -203,6 +213,9 @@ D	20,5,20
 ![](images/DatasetBars_barcharts_example_height3.png)
 
 **!itemHeightPCT** specifies the percentage of available space taken by a bar; its value ranges from 1 to 100.
+
+----
+
 Example 4 on bar height:
 
 ```
@@ -217,6 +230,8 @@ D	20,5,20
 ```
 
 ![](images/DatasetBars_barcharts_example_height4.png)
+
+----
 
 Example 5 on bar height:
 
@@ -234,6 +249,8 @@ D	20,5,20
 
 ![](images/DatasetBars_barcharts_example_height5.png)
 
+----
+
 Example 6 on bar height:
 
 ```
@@ -241,8 +258,6 @@ Example 6 on bar height:
 ```
 
 ![](images/DatasetBars_barcharts_example_height6.png)
-
-{anchor:show data value}
 
 ### Show data values
 First, let's see an example:
@@ -308,6 +323,8 @@ D	20,5,20
 
 ![](images/DatasetBars_bars_showdatavalue_example.png)
 
+----
+
 Example 2 on show data value, align the values to the end of the bars:
 
 ```
@@ -327,6 +344,8 @@ D	20,5,20
 ```
 
 ![](images/DatasetBars_bars_showdatavalue_example3.png)
+
+----
 
 Example 3 on show data value, align the values to the start of the bars:
 

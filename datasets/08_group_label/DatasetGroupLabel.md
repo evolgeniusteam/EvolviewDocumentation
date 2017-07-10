@@ -5,13 +5,12 @@ please consult our examples trees 'group label', 'group label style 3' and 'grou
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [data](#data)
-* [visualisation styles](#visualisation-styles)
+* [visualisation styles](#visualization-styles)
 * [examples](#examples)
 * [add group label to collapsed trees](#add-group-label-to-collapsed-trees)
 
-{anchor:overview}
 ### Overview
 
 Group labels will be showed next to the leaf labels:
@@ -23,7 +22,6 @@ Here is an quick example (display styles 5,2 and 1 out of in total 5 styles ):
 
 ![](images/DatasetGroupLabel_grouplabel_showcase.png)
 
-{anchor:modifiers}
 ### Supported modifiers
 
 Apart from the common modifiers such as those that are related to legends, Group Labels supports an additional modifier:
@@ -46,7 +44,6 @@ The value of this modifier defines default settings for all group labels and can
 |bkcolor=colorname|any color name or valid html hex colors such as #FFFF00|default color for group background; **valid only when style = 2~5**; default = lightblue|
 |marginPCT=0.05|any float value between 0 and 1|white space between group labels; the larger the value, the more white space to show; default = 0.05|
 
-{anchor:data}
 ### data
 
 Each line of the Data section usually consists two parts, separated by a **_TAB_**.
@@ -60,7 +57,6 @@ See below:
 
 ![](images/DatasetGroupLabel_grouplabel_attributes_explained.png)
 
-{anchor:visualisation styles}
 ### Visualization styles
 
 The tree:
@@ -142,7 +138,6 @@ In circular mode, style 5 will be visualised as style 4:
 
 ![](images/DatasetGroupLabel_grouplabel_circular.png)
 
-{anchor:examples}
 ### Examples
 
 copy & paste the following contents to Evolview to view the visualisation results.
@@ -271,7 +266,6 @@ chimp,human	text=mammal,color=darkgreen,textorientation=vertical,linewidth=4,fon
 ----
 
 
-{anchor:add group label to collapsed trees}
 ### Add group label to collapsed trees
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add group labels to a collapsed tree. See [here](DatasetCollapseInternalNodes#grouplabel) for more information.
 

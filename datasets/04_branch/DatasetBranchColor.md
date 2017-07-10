@@ -4,12 +4,10 @@
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
-* [data](#data)
+* [modifiers](#supported-modifiers)
+* [data](#the-data)
 * [examples](#examples)
 * [add branch color to a collapsed tree](#add-branch-color-to-a-collapsed-tree)
-
-{anchor:overview}
 
 ### Overview
 Branch colors will be applied to tree branches.
@@ -20,7 +18,6 @@ Here is an example:
 
 ![](images/DatasetBranchColor_ev.branch.001.png)
 
-{anchor:modifiers}
 
 ### Supported modifiers
 
@@ -34,8 +31,6 @@ Supported Key-Value pairs for branch colors:
 |!Title or !Legend|text|title of the legend; default = name of the dataset|
 |!ShowLegends|0 or 1|0 : hide legends; 1 : show legends|
 |!opacity|float number between 0 to 1|opacity of the dataset|
-
-{anchor:data}
 
 ### the data
 Data are usually tab-delimited three-column texts, with the third column optional.
@@ -89,8 +84,6 @@ By adding a third column, the default behavior can be changed. Here is a list of
 
 See the examples below.
 
-{anchor:example}
-
 ### Examples
 
 Example 1, 'ad':
@@ -133,7 +126,6 @@ human	red	toroot
 
 ![](images/DatasetBranchColor_branchcolor_toroot.png)
 
-{anchor:add branch color to a collapsed tree}
 ### add branch color to a collapsed tree
 
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add branch color to a collapsed tree. See [here](DatasetCollapseInternalNodes#branchcolors) for more information.

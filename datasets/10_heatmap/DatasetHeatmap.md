@@ -3,16 +3,15 @@
 ## Heatmap
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [strokes](#strokes)
-* [the !heatmap modifier](#the-!heatmap-modifier)
+* [the !heatmap modifier](#the-heatmap-modifier)
 * [show data value](#show-data-value)
 * [color gradient](#color-gradient)
 * [tick labels of the color gradient of the legend](#tick-labels-of-the-color-gradient-of-the-legend)
 * [column label style customisation](#column-label-style-customisation)
 * [add heatmap to collapsed trees](#add-heatmap-to-collapsed-trees)
 
-{anchor:overview}
 ### Overview
 
 **_note:_**
@@ -54,7 +53,6 @@ here is how the plot looks like (with annotations):
 
 ![](images/DatasetHeatmap_heatMap_explained.png)
 
-{anchor:modifiers}
 ### Supported modifiers
 The following 'modifiers' (Key-Value pairs) are supported for heatmap:
 
@@ -90,7 +88,6 @@ The following 'modifiers' (Key-Value pairs) are supported for heatmap:
 3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
 4. please also always use TAB to separate the columns in the data section.
 
-{anchor:strokes}
 ### Strokes
 Stroke color and width is supported in heat plot; the corresponding modifiers are **!defaultStrokeColor** and
 **!defaultStrokeWidth**.
@@ -121,7 +118,6 @@ D	20,22,25,4
 
 ![](images/DatasetHeatmap_heatmap_with_strokecolor.png)
 
-{anchor:the !heatmap modifier}
 ### the !heatmap modifier
 The 'value' of the modifier **!heatmap** can be any combination of the following, separated by a ",":
 
@@ -184,7 +180,6 @@ Example 3, roundedcorner=5:
 
 ![](images/DatasetHeatmap_heatmapt_roundedcorner_colwidth.png)
 
-{anchor:show data value}
 ### Show data value
 Heatmap supports the **!showdataValue** modifier; the 'value' of **!showdataValue** can be any combination of the following, separated by a ",":
 
@@ -197,7 +192,6 @@ Heatmap supports the **!showdataValue** modifier; the 'value' of **!showdataValu
 
 **_NOTE_**: when 'fontcolor' is omitted, a 'black' or 'white' color will be chosen automatically depending the background color of each value in order to increase readability.
 
-{anchor:color gradient}
 ### Color gradient
 Creating color gradient is very easy in EvolView by using the !colorgradient or !colorspectrum modifier. Here are a few examples:
 
@@ -259,7 +253,6 @@ Example 4:
 
 ![](images/DatasetHeatmap_heatmap_fivecolors.png)
 
-{anchor:tick labels of the color gradient of the legend}
 ### Tick labels of the color gradient of the legend
 
 EvolView calculates automatically where the ticks and tick labels to plot on the color gradient of the legend, based on the min and max of user data. However, the results are not always up to users' standard. Users can use modifier **!colorgradientMarkLabel** / **!colorgradientMarkLabels** to customize the tick labels.
@@ -295,7 +288,6 @@ Example 2, customized tick labels using !colorgradientMarkLabel:
 
 ![](images/DatasetHeatmap_heatmap_ticklables_customized.png)
 
-{anchor:column label style customisation}
 ### column label style customisation
 
 Heatmap also supports modifier **!columnLabelStyle**; the value of this modifier can be any combination of the following, separated by a ",":
@@ -328,7 +320,6 @@ D	20,22,23,25
 
 ![](images/DatasetHeatmap_heatmap_column_label_customized.png)
 
-{anchor:add heatmap to collapsed trees}
 ### Add heatmap to collapsed trees
 Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add heatmaps to a collapsed tree. See [here](DatasetCollapseInternalNodes#heatmap) for more information.
 

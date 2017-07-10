@@ -4,12 +4,11 @@
 
 ### Table of contents
 * [overview](#overview)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [data](#data)
 * [examples](#examples)
-* [show multiple sets of bootstrap values](#showMultipleBootstraps)
+* [show multiple sets of bootstrap values](#show-multiple-sets-of-bootstrap-values)
 
-{anchor:overview}
 ### Overview
 Bootstrap value style allows users to tweak the displaying style of bootstrap values.
 
@@ -35,7 +34,6 @@ NOTE: in order to show bootstrap values, the tree has to have bootstrap values, 
 
 ![](images/DatasetBootstrapValueStyle_bootstrap_scores_button_active.png)
 
-{anchor:modifiers}
 ### Supported modifiers
 
 In addition to the universal modifiers , an additional 'modifier' is supported:
@@ -58,7 +56,6 @@ The value of this modifier can be any of the following options, individually or 
 3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
 4. please also always use TAB to separate the columns in the data section.
 
-{anchor:data}
 ### data
 Each line of data should consist of two parts, separated by a 'TAB' character.
 the **_first part_** defines the range of the bootstrap values; it could be either a single numeric value, or two values separated by a ',' or ':'. For example:
@@ -81,7 +78,6 @@ For example:
 1. unlike other annotation datasets, the data part of 'Bootstrap Value Styles' is optional; when omitted, the global options defined by modifier '!bootstrapValueStyle' will be applied to all bootstrap values
 2. the data part, when available, will override the global options.
 
-{anchor:examples}
 ### Examples
 The tree:
 
@@ -214,7 +210,6 @@ Example 9:
 
 ![](images/DatasetBootstrapValueStyle_bootstrapvalues_with_legend.png)
 
-{anchor:showMultipleBootstraps}
 ### Show multiple sets of bootstrap values
 Evolview is starting to support multiple sets of bootstraps (meaning this functionality is still under-development). To do so users need to prepare the input tree in a very specific format, and a special "bootstrap style" dataset.
 

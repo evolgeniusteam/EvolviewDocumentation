@@ -4,11 +4,11 @@
 
 ### Index
 * [overview](#overview)
-* [automatic retrieval of domain annotations from PFAM](#automatic-retrieval-of-domain-annotations-from-PFAM)
+* [automatic retrieval of domain annotations from PFAM](#automatic-retrieval-of-domain-annotations-from-pfam)
 * [write domain annotations by hand](#write-domain-annotations-by-hand)
-* [modifiers](#modifiers)
+* [modifiers](#supported-modifiers)
 * [examples](#examples)
-* [issues](#issues)
+* [issues](#known-issues)
 
 {anchor:overview}
 ### Overview
@@ -23,7 +23,6 @@ A dialogbox will then appear:
 
 User can choose to either copy and paste the contents of the dataset by hand, upload from a text file, or retrieve automatically from public resources like PFAM.
 
-{anchor:automatic retrieval of domain annotations from PFAM}
 ### automatic retrieval of domain annotations from PFAM
 
 To retrieve domains automatically from PFAM, user can simply click the green button "retrieve data from PFAM" (see figure above).
@@ -120,7 +119,6 @@ Last, click the "Submit" button if there is no error, the domains will be plotte
 
 ![](images/DatasetProteinDomain_proteindomain.png)
 
-{anchor:write domain annotations by hand}
 ### Write domain annotations by hand
 
 A typical domain annotation for a protein looks like the following:
@@ -151,7 +149,6 @@ For example, the following domain annotations are all valid:
 159,186,zf-H2C2_2,Pfam-A,,,PF13465,0.0036,27.00
 ```
 
-{anchor:modifiers}
 ### Supported modifiers
 
 |Key (case insensitive)|Value|Description|
@@ -176,11 +173,9 @@ For example, the following domain annotations are all valid:
 2. please also always use TAB to separate the columns in the data section.
 
 
-{anchor:examples}
 ### Examples
 more examples will be added.
 
-{anchor:issues}
 ### Known issues
 Exporting to graphical formats other than SVG is not functional if '!shadow' option is on.
 

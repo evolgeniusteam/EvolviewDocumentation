@@ -1,11 +1,10 @@
 ## The interface
 
 Table of contents
-* [overview](#overview)
-* [toolbar](#toolbar)
-* [canvas](#canvas)
+* [overview](#the-interface-overview)
+* [toolbar](#the-toolbar)
+* [canvas](#the-canvas)
 
-{anchor:overview}
 ### The interface overview
 
 The main user interface consists mainly six components:
@@ -22,13 +21,11 @@ The main user interface consists mainly six components:
 
 ![](images/TheInterface_interface_overview.png)
 
-{anchor:toolbar}
 ### The toolbar
 The toolbar consists of several tabs, each in turns consists of a collection of buttons and widgets. So far there are four tabs in the toolbar.
 
 The functions of the icons are quite straightforward; mouse over the icons to show tooltips.
 
-{anchor:canvas}
 ### The canvas
 
 The canvas displays your active tree (only once at a time) and active datasets. With the canvas users can :

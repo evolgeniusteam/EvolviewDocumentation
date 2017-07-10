@@ -4,7 +4,7 @@
 
 * [the interface](#the-interface)
 * [sharing modes](#sharing-modes)
-* [more about the Tree Sharing page](#more-about-the-Tree-Sharing-page)
+* [more about the Tree Sharing page](#more-about-the-tree-sharing-page)
 
 _**Note:**_
 1. Sharing Trees is still under development; please send suggestions and comments to us.
@@ -12,7 +12,6 @@ _**Note:**_
 3. Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary.
 Tree Sharing comes with three different Sharing Modes, each grants different privileges to others; see details bellow.
 
-{anchor:the interface}
 ### The interface
 To go to the Tree Sharing page, simply click the "Share trees" button at the header bar:
 ![](images/TreeShare_sharetree_toolbar.png)
@@ -41,7 +40,6 @@ See below:
 
 ![](images/TreeShare_sharetree_shared.png)
 
-{anchor:sharing modes}
 ### Sharing modes
 
 ![](images/TreeShare_sharetree_modes.png)
@@ -64,7 +62,6 @@ So far three Sharing Modes are supported:
 	* others can view and interact with the tree
 	* any changes made by others will NOT be saved
 
-{anchor:more about the Tree Sharing page}
 ### More about the Tree Sharing page
 The Tree Sharing page contains additional information, see below:
 

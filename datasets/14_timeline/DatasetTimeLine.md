@@ -3,12 +3,11 @@
 ## Heatmap
 ### Table of contents
 * [overview](#overview)
-* [the !TimeLine modifier](#timeline)
-* [1. the !TimeLineAxis modifier (Axis plot)](#timelineaxis)
-* [2. the !TimeLineLines modifier (Line plot)](#timelinelines)
-* [3. the !TimeLineStrips modifier (Strip plot)](#timelinestrips)
+* [the !TimeLine modifier](#the-timeline-modifier)
+  * [the !TimeLineAxis modifier (Axis plot)](#the-timelineaxis-modifier-axis-plot)
+  * [the !TimeLineLines modifier (Line plot)](#the-timelinelines-modifier-line-plot)
+  * [the !TimeLineStrips modifier (Strip plot)](#the-timelinestrips-modifier-strip-plot)
 
-{anchor:overview}
 ### Overview
 **_note:_**
 * please consult the tree 'TimeLines' in the DEMOS project to see TimeLine plots in action
@@ -55,7 +54,6 @@ resulting visualisation:
 
 ![](images/DatasetTimeLine_timeline02.png)
 
-{anchor:timeline}
 ### the '!TimeLine' modifier
 The '!TimeLine' modifier is mandatory for all the following three types of timeline plots, the value of this modifier can be any combination of the following, separated by a ",":
 The following 'modifiers' (Key-Value pairs) are supported for heatmap:
@@ -73,8 +71,7 @@ The following 'modifiers' (Key-Value pairs) are supported for heatmap:
 3. the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored
 4. please also always use TAB to separate the columns in the data section.
 
-{anchor:timelineaxis}
-### 1. the '!timeLineAxis' modifier  (Axis plot)
+### the '!timeLineAxis' modifier  (Axis plot)
 This modifier defines an axis and related parameters; the value of this modifier can be any combination of the following, separated by a ",":
 
 |(case insensitive)|Alternative value|Mandatory|Description|
@@ -254,8 +251,7 @@ Datasets:
 
 ----
 
-{anchor:timelinelines}
-### 2. the '!timeLineLines' modifier  (Line plot)
+### the '!timeLineLines' modifier  (Line plot)
 This modifier defines a set of time points at which lines will be plotted; this modifier can also be used to annotate these lines and control the visualisation styles of the lines. The value of this modifier can be any combination of the following, separated by a ",":
 
 |(case insensitive)|Alternative value|Mandatory|Description|
@@ -394,8 +390,7 @@ The tree:
 
 ----
 
-{anchor:timelinestrips}
-### 3. the !TimeLineStrips modifier (Strip plot)
+### the !TimeLineStrips modifier (Strip plot)
 This modifier defines a set of color strips to be plotted behind the trees; users will be allowed to annotate the strips and control their visualisation styles. The value of this modifier can be any combination of the following, separated by a ",":
 
 |(case insensitive)|Alternative value|Mandatory|Description|
