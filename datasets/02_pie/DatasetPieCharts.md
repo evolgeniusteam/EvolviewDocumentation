@@ -13,15 +13,19 @@
 ### Overview
 Pies will be displayed on internal and leaf branches.
 Here is an example:
+
 ![](images/DatasetPieCharts_piechart_overview.png)
+
 User can upload multiple pie-chart datasets to a tree, but only one can be displayed at a time.
 Using the control panel on the page left, user can control which one can be displayed:
+
 ![](images/DatasetPieCharts_piechart_usercontrol.png)
 
 {anchor:modifiers}
 ### Supported modifiers
 Supported Key-Value pairs for pie charts:
-Key (case insensitive)|Value|Description
+
+|Key (case insensitive)|Value|Description|
 |----------------------|-----|-----------|
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
@@ -36,6 +40,7 @@ Key (case insensitive)|Value|Description
 |!area|none|use user inputs as the areas of the pie charts|
 |!radius|none|use user inputs as the radiuses of the pie charts|
 |**new: show data values|see section [#show data value](#show-data-value) for more details**| |
+
 **_notes on preparing your dataset!!_**
 * please always use TAB to separate the modifiers and their values.
 * some modifiers should not be used in combination, e.g. !area and !radius are mutually exclusive.
