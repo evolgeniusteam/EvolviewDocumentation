@@ -14,6 +14,7 @@
 Pies will be displayed on internal and leaf branches.
 Here is an example:
 ![](images/DatasetPieCharts_piechart_overview.png)
+
 User can upload multiple pie-chart datasets to a tree, but only one can be displayed at a time.
 Using the control panel on the page left, user can control which one can be displayed:
 ![](images/DatasetPieCharts_piechart_usercontrol.png)
@@ -21,7 +22,7 @@ Using the control panel on the page left, user can control which one can be disp
 {anchor:modifiers}
 ### Supported modifiers
 Supported Key-Value pairs for pie charts:
-Key (case insensitive)|Value|Description
+|Key (case insensitive)|Value|Description|
 |----------------------|-----|-----------|
 |**universal modifiers**| | |
 |!Groups or !LegendText|comma separated text|Legend texts; for example 'group_a,group_b,group_c'|
