@@ -129,12 +129,38 @@ In the future, we'll allow users to name the collapsed nodes directly in the dat
 C,D	name=my collapsed node
 ```
 
-#### Styling collapsed nodes (work in progress)
-In the future, we'll allow users to customise the visualisation styles of the collapsed nodes using the annotation dataset. For example:
+#### Styling collapsed nodes
+Users can customise the visualisation styles of the collapsed nodes using the grammar below. For example:
 
 ```
-C,D	name=my collapsed node,color=yellow:darker,linewidth=2,linestyle=dashed
+C,D	name=my collapsed node,color=yellow,linewidth=2,linestyle=dashed
 ```
+
+please note that HTML codes are also supported for the name; for example:
+```
+Scer|YPL277C,Spar|spar435-g2.1	name=my triangle,color=green,linewidth=2,linestyle=dashed
+```
+
+will be visualised as:
+
+![](images/DatasetCollapseInternalNodes_name_and_style_collapsed_node.png)
+
+please note that we support HTML coded texts as the **name** of the collapsed node; for example:
+
+```HTML
+Scer|YPL277C,Spar|spar435-g2.1	name=my <i style="color:pink">triangle</i>,color=green,linewidth=2,linestyle=dashed
+```
+
+when the HTML mode is enabled (by using the 'HTML' button ![](images/htmlmode_button.png) on the toolbar), the collapsed node will be visualised as:
+
+![](images/DatasetCollapseInternalNodes_name_and_style_collapsed_node_with_HTMLcode.png)
+
+Here the tree (which also contains some HTML code):
+```
+((((((Scer|<i style="color:red;background-color:lightgreen">YPL277C</i>:1.234e-10,Spar|spar435-g2.1),Sbay|sbayc582-g2.1),(Scer|YOR389W,Smik|smik240-g1.1)),(Klac|KLLA0E19349g,Sklu|SAKL0A04994g)),Ylip|YALI0A21131g),Anid|AN4574);
+```
+
+**please note** that under **_HTML mode_**, exporting to graphical formats may NOT work. You may export your visualisation to a SVG file, but it can only be visualised correctly by browsers such as Firefox, Google Chrome and Apple Safari, NOT by Adobe Illustrator.
 
 ### Add datasets to a collapsed tree
 In general, collapsed internal nodes are treated as leaf nodes. An internal node can be identified by its internal id, or if available, node name. To find such information, users can simply mouse-over an internal node.

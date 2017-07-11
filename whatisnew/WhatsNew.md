@@ -7,9 +7,13 @@
 	* He et al, Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees, Nucleic Acids Res, (2016). ([http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full](http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full))
 	*  Zhang et al. EvolView, an online tool for visualizing, annotating and managing phylogenetic trees. Nucleic Acids Res (2012) pp. 4. ([http://nar.oxfordjournals.org/content/40/W1/W569](http://nar.oxfordjournals.org/content/40/W1/W569)). See also the [citation page](/miscs/citation.md).
 
+### July 11, 2017
+* our documentation has been moved to GitHub!!!
+
+Long-time users may still remember that Evolview documentation was originally hosted at Google Code, then was moved to MicroSoft CodePlex. This may never happen but let us hope that we do NOT have to move again!!!
 
 ### Jan 19, 2017
-* use '!recycleColor' modifier to stop recycling colors in "Color shapes and strips" plot.
+* use '!colorRecycle' modifier to stop recycling colors in "Color shapes and strips" plot.
 
 For example by default colors will be recycled:
 
