@@ -7,6 +7,15 @@
 	* He et al, Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees, Nucleic Acids Res, (2016). ([http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full](http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full))
 	*  Zhang et al. EvolView, an online tool for visualizing, annotating and managing phylogenetic trees. Nucleic Acids Res (2012) pp. 4. ([http://nar.oxfordjournals.org/content/40/W1/W569](http://nar.oxfordjournals.org/content/40/W1/W569)). See also the [citation page](/miscs/citation.md).
 
+### June~Aug, 2017
+* added HTML mode;
+  * the documentation is to be written.
+
+### July 17, 2017
+* bug fixes as always
+  * fixed an issue that leaf label background overlaps with group labels of style 1
+  * fixed an issue that the background box is smaller than the leaf label; also improved cross-browser compatibility on this issue
+
 ### July 11, 2017
 * our documentation has been moved to GitHub!!!
 
