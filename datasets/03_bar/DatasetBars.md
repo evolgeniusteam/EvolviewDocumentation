@@ -41,7 +41,8 @@ Key (case insensitive)|Value|Description
 |**bar charts specific**| | |
 |!align or !alignIndividualColumn|none|align individual columns if the bars are stacked|
 |!Fanplot or ! Fan|none|works only with circular tree; see examples bellow|
-|**new: show data values**|see section show data value for more details| |
+|**new:** !showdataValue| | show data values; see [here](#show-data-values) for more details|
+|**new:** !RowDataReorder| no, asc, desc | reorder the display order of stacked bars according to their corresponding values.  default no; asc: in ascending order; desc: in descending order; see [here](#change-display-order-of-stacked-bars) for more details|
 
 _**notes on preparing your datasets!!**_
 
@@ -260,6 +261,8 @@ Example 6 on bar height:
 ![](images/DatasetBars_barcharts_example_height6.png)
 
 ### Show data values
+Now users can use modifier '**!showdataValue**' to enable the display the bar values.
+
 First, let's see an example:
 the tree :
 
@@ -278,7 +281,11 @@ the dataset (copy & paste) :
 !grid
 !axis
 !showLegends	0
+
+## -- here you go the new modifier --
+## -- please use 'TAB' to separate this modifier with its value --
 !showdataValue	show=1,fontsize=12,fontitalic=1,textalign=end
+
 A	8,13,5
 B	10,20,7
 C	8,9,7
@@ -288,12 +295,9 @@ D	20,5,20
 and the result:
 
 ![](images/DatasetBars_bars_showdatavalue_example2.png)
+----
 
-A bit more details on supported features:
-
-![](images/DatasetBars_bars_showdatavalue_attributes.png)
-
-The 'value' of the 'key' !showdataValue can be any combination of the following, separated by a ",":
+The 'value' part of the modifier **!showdataValue** can be any combination of the following, separated by a ",":
 
 key-value|alternative value|description
 ---------|-----------------|-----------
@@ -303,7 +307,10 @@ key-value|alternative value|description
 |fontitalic=1|0|set font italic; optional; default = 0|
 |textalign=middle|start or end|set text align; optional; default = middle; see the following examples|
 
-Example 1 on show data value:
+----
+Here are some more examples.
+
+**Example 1:**
 
 ```
 !groups	group 1,group 2,group 3
@@ -314,6 +321,7 @@ Example 1 on show data value:
 !grid
 !axis
 !showLegends	0
+
 !showdataValue	show=1,fontsize=12,fontitalic=1,textalign=end,fontcolor=white
 A	8,13,5
 B	10,20,7
@@ -325,7 +333,7 @@ D	20,5,20
 
 ----
 
-Example 2 on show data value, align the values to the end of the bars:
+**Example 2:** align the values to the end of the bars:
 
 ```
 !groups	group 1,group 2,group 3
@@ -336,6 +344,7 @@ Example 2 on show data value, align the values to the end of the bars:
 !grid
 !axis
 !showLegends	0
+
 !showdataValue	show=1,fontsize=12,fontitalic=1,textalign=end,fontcolor=white
 A	8,13,5
 B	10,20,7
@@ -347,7 +356,7 @@ D	20,5,20
 
 ----
 
-Example 3 on show data value, align the values to the start of the bars:
+**Example 3:** align the values to the start of the bars:
 
 ```
 !groups	group 1,group 2,group 3
@@ -366,5 +375,90 @@ D	20,5,20
 ```
 
 ![](images/DatasetBars_bars_showdatavalue_example4.png)
+
+### Change display order of stacked bars
+Users now can use modifier '**!RowDataReorder**' to change the display order of the stacked bars according to their corresponding values in either ascending or descending orders.
+
+Let's see some examples. First the tree:
+```
+(A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
+```
+
+----
+**example 1**, the default barplot:
+```
+!groups	group 1,group 2,group 3
+!colors	#028482,#7ABA7A,#B76EB8
+!title	barplot with data shown
+!fan
+!itemHeightPCT	80
+!plotWidth	150
+
+
+### last modified: sep 28, 2014
+!showData
+!showDataFontSize	10
+!showDataFontColor	white
+!showDataTextAlign	start
+
+A	8,13,5
+B	10,20,7
+C	8,9,7
+D	20,5,20
+```
+![](/whatisnew/images/barplot-default.png)
+
+----
+**example 2**, barplot with row data re-ordered in ascending order.
+```
+!groups	group 1,group 2,group 3
+!colors	#028482,#7ABA7A,#B76EB8
+!title	barplot with data shown
+!fan
+!itemHeightPCT	80
+!plotWidth	150
+
+## -- new modifier here!!!
+!RowDataReorder	asc
+
+### last modified: sep 28, 2014
+!showData
+!showDataFontSize	10
+!showDataFontColor	white
+!showDataTextAlign	start
+
+A	8,13,5
+B	10,20,7
+C	8,9,7
+D	20,5,20
+```
+![](/whatisnew/images/barplot-rowdatareordered-asc.png)
+
+----
+**example 3**, barplot with row data re-ordered in descending order.
+```
+!groups	group 1,group 2,group 3
+!colors	#028482,#7ABA7A,#B76EB8
+!title	barplot with data shown
+!fan
+!itemHeightPCT	80
+!plotWidth	150
+
+## -- new modifier here!!!
+!RowDataReorder	descending
+
+### last modified: sep 28, 2014
+!showData
+!showDataFontSize	10
+!showDataFontColor	white
+!showDataTextAlign	start
+
+A	8,13,5
+B	10,20,7
+C	8,9,7
+D	20,5,20
+```
+![](/whatisnew/images/barplot-rowdata-reordered-desc.png)
+
 
 [<< previous section: pie chart](/datasets/02_pie/DatasetPieCharts.md)      |       [next section: branch color >>](/datasets/04_branch/DatasetBranchColor.md)

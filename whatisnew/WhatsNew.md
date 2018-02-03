@@ -1,11 +1,95 @@
 ## What's new
 
 ### Citations
-* _Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary. _
+* _Please email us ([Evolgenius Team](mailto:evolgenius.team@gmail.com)) if you have any questions; attach your datasets and trees if necessary._
 
 * _please **Cite us**_ if you find this tool useful:
-	* He et al, Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees, Nucleic Acids Res, (2016). ([http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full](http://nar.oxfordjournals.org/content/early/2016/04/30/nar.gkw370.full))
+	* He et al. Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees, Nucleic Acids Res, (2016). ([http://nar.oxfordjournals.org/content/44/W1/W236](http://nar.oxfordjournals.org/content/44/W1/W236))
 	*  Zhang et al. EvolView, an online tool for visualizing, annotating and managing phylogenetic trees. Nucleic Acids Res (2012) pp. 4. ([http://nar.oxfordjournals.org/content/40/W1/W569](http://nar.oxfordjournals.org/content/40/W1/W569)). See also the [citation page](/miscs/citation.md).
+
+### Feb 03, 2018
+* for batplot, users now can use modifier '**!RowDataReorder**' to change the display order of the stacked bars according to their corresponding values in either ascending or descending orders. See [here](/datasets/03_bar/DatasetBars.md#change-display-order-of-stacked-bars) for more details.
+
+Let's see some examples. First, the tree:
+```
+(A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
+```
+
+----
+**example 1**, the default barplot:
+```
+!groups	group 1,group 2,group 3
+!colors	#028482,#7ABA7A,#B76EB8
+!title	barplot with data shown
+!fan
+!itemHeightPCT	80
+!plotWidth	150
+
+
+### last modified: sep 28, 2014
+!showData
+!showDataFontSize	10
+!showDataFontColor	white
+!showDataTextAlign	start
+
+A	8,13,5
+B	10,20,7
+C	8,9,7
+D	20,5,20
+```
+![](/whatisnew/images/barplot-default.png)
+
+----
+**example 2**, barplot with row data re-ordered in ascending order.
+```
+!groups	group 1,group 2,group 3
+!colors	#028482,#7ABA7A,#B76EB8
+!title	barplot with data shown
+!fan
+!itemHeightPCT	80
+!plotWidth	150
+
+## -- new modifier here!!!
+!RowDataReorder	asc
+
+### last modified: sep 28, 2014
+!showData
+!showDataFontSize	10
+!showDataFontColor	white
+!showDataTextAlign	start
+
+A	8,13,5
+B	10,20,7
+C	8,9,7
+D	20,5,20
+```
+![](/whatisnew/images/barplot-rowdatareordered-asc.png)
+
+----
+**example 3**, barplot with row data re-ordered in descending order.
+```
+!groups	group 1,group 2,group 3
+!colors	#028482,#7ABA7A,#B76EB8
+!title	barplot with data shown
+!fan
+!itemHeightPCT	80
+!plotWidth	150
+
+## -- new modifier here!!!
+!RowDataReorder	descending
+
+### last modified: sep 28, 2014
+!showData
+!showDataFontSize	10
+!showDataFontColor	white
+!showDataTextAlign	start
+
+A	8,13,5
+B	10,20,7
+C	8,9,7
+D	20,5,20
+```
+![](/whatisnew/images/barplot-rowdata-reordered-desc.png)
 
 ### June~Aug, 2017
 * added HTML mode;
