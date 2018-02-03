@@ -446,7 +446,7 @@ D	20,5,20
 !plotWidth	150
 
 ## -- new modifier here!!!
-!RowDataReorder	descending
+!RowDataReorder	desc
 
 ### last modified: sep 28, 2014
 !showData
