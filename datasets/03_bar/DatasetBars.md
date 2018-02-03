@@ -4,10 +4,11 @@
 
 ### Index
 
-* [overview](#overview)
-* [modifiers](#supported-modifiers)
-* [examples](#examples)
-* [show data value](#show-data-values)
+* [Overview](#overview)
+* [Modifiers](#supported-modifiers)
+* [Examples](#examples)
+* [Show data value](#show-data-values)
+* [Change display order of stacked bars](#change-display-order-of-stacked-bars)
 
 ### Overview
 
