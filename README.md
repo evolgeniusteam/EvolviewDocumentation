@@ -11,6 +11,18 @@ With EvolView, you can:
 1. He et al, Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees, Nucleic Acids Res, (2016). ([http://nar.oxfordjournals.org/content/44/W1/W236](http://nar.oxfordjournals.org/content/44/W1/W236))
 2. Zhang et al. EvolView, an online tool for visualizing, annotating and managing phylogenetic trees. Nucleic Acids Res (2012) pp. 4. ([http://nar.oxfordjournals.org/content/40/W1/W569](http://nar.oxfordjournals.org/content/40/W1/W569)). See also the [citation page](miscs/citation.md).
 
+* **mirror sites**:
+For those who has difficulties accessing our [main site](http://www.evolgenius.info/evolview/) due to various reasons, please visit one of our following mirror sites:
+
+|site #|url|geo location|
+|----------------------|-----|-----------|
+|1.|[http://120.202.110.254:8280/evolview](http://120.202.110.254:8280/evolview)|Wuhan, China|
+
+**please note**
+1. Synchronized data from our main site include:
+1.1 for **site #1**: all users registered before May 2, 2018 and trees/ datasets uploaded before that date;
+2. New data and users will NOT be synchronized across our servers;
+
 ## Table of Contents
 
 ### [The WebServer](http://www.evolgenius.info/evolview/)
