@@ -17,8 +17,12 @@ For those who has difficulties accessing our main sites due to various reasons, 
 |1.|[http://120.202.110.254:8280/evolview](http://120.202.110.254:8280/evolview)|Wuhan, China|
 
 **please note**
-1. Synchronized data from our main site include: 
-1.1 for **site #1**: all users registered before May 2, 2018 and trees/ datasets uploaded before that date;
+1. Synchronized data from our main site include:
+
+1.1 for **site #1**:
+
+all users registered before May 2, 2018 and trees/ datasets uploaded before that date;
+
 2. New data and users will NOT be synchronized across our servers;
 
 ### Feb 03, 2018
