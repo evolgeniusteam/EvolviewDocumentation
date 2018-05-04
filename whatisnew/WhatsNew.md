@@ -8,7 +8,8 @@
 	*  Zhang et al. EvolView, an online tool for visualizing, annotating and managing phylogenetic trees. Nucleic Acids Res (2012) pp. 4. ([http://nar.oxfordjournals.org/content/40/W1/W569](http://nar.oxfordjournals.org/content/40/W1/W569)). See also the [citation page](/miscs/citation.md).
 
 
-* **mirror sites**:
+
+### **mirror sites**:
 For those who has difficulties accessing our main sites due to various reasons, please visit one of our following mirror sites:
 
 |site #|url|geo location|
