@@ -85,7 +85,7 @@ INT3
 CDE3
 ```
 
-Please consult [this wiki](SupportedTreeFormats#name-internal-nodes) for more information on naming internal nodes.
+Please consult [this wiki](/supportedtreeformats/SupportedTreeFormats#name-internal-nodes) for more information on naming internal nodes.
 
 ----
 
@@ -121,7 +121,7 @@ The "vertical scale" and "horizontal scale" can be changed/ specified using the 
 #### Naming collapsed nodes (work in progress)
 By default, the text displayed next to the collapsed node is the node name (see the annotated figure above); if the node is not named, its internal name (INT###) will be used.
 
-Please consult [this wiki](SupportedTreeFormats#name-internal-nodes) for more information on naming internal nodes.
+Please consult [this wiki](/supportedtreeformats/SupportedTreeFormats#name-internal-nodes) for more information on naming internal nodes.
 
 In the future, we'll allow users to name the collapsed nodes directly in the dataset. For example:
 
