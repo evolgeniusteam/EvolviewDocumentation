@@ -1,3 +1,5 @@
+## Note: the following documentation is for Evolview version 2. To access the new documentation for our latest version of Evolview(version 3) kindly access : http://www.evolgenius.info/evolview/helpsite/hp2.html
+
 ### Use Evolview anonymously
 If you're not interested in creating a new account, just click the "Use without an account" button:
 
