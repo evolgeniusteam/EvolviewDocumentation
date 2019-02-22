@@ -1,3 +1,5 @@
+## Note: the following documentation is for Evolview version 2. To access the new documentation for our latest version of Evolview(version 3) kindly access : http://www.evolgenius.info/evolview/helpsite/hp1.html
+
 ### Why crete an account?
 EvolView is free for all users; all functionalities, except those require a connection to remote MySQL servers, are available to non-registered users. However there are many benefits for registered users (registration is free); with an account, you can:
 
