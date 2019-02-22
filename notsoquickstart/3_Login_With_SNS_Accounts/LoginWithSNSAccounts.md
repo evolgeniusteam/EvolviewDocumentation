@@ -1,3 +1,5 @@
+## Note: the following documentation is for Evolview version 2. To access the new documentation for our latest version of Evolview(version 3) kindly access : http://www.evolgenius.info/evolview/helpsite/hp3.html
+
 ### Login with SNS accounts
 With OAuth, you can login with your existing accounts such as Gmail, Facebook, Windows Live, LinkedIn and many others. To do this, simply click one of the following icons in the Login page:
 
