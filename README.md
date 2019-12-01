@@ -21,7 +21,7 @@ For those who has difficulties accessing our [main site](http://www.evolgenius.i
 
 |site #|url|geo location|
 |----------------------|-----|-----------|
-|1.|[http://120.202.110.254:8280/evolview](http://120.202.110.254:8280/evolview)|Wuhan, China|
+|1.|[https://evolgenius.info//evolview-v2-m/#login](https://evolgenius.info//evolview-v2-m/#login)|Wuhan, China|
 
 **please note**
 1. Synchronized data from our main site include:
