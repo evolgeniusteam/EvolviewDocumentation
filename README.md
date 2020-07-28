@@ -1,7 +1,7 @@
-## Note: the following documentation is for Evolview version 2. To access the new documentation for our latest version of Evolview(version 3) kindly access : http://www.evolgenius.info/evolview/helpsite/quick-start.html
+## Note: the following documentation is for Evolview version 2. To access the new documentation for our latest version of Evolview(version 3) kindly access : https://www.evolgenius.info/evolview/helpsite/qst1.html
 
 ## Evolview v2: an online visualization and management tool for customized and annotated phylogenetic trees
-[EvolView](http://www.evolgenius.info/evolview/) is an online tool for displaying, managing and customizing phylogenetic trees.
+[EvolView](https://www.evolgenius.info/evolview/) is an online tool for displaying, managing and customizing phylogenetic trees.
 
 With EvolView, you can:
 * visualize phylogenetic trees of various formats,
@@ -17,7 +17,7 @@ With EvolView, you can:
 3. Zhang et al. EvolView, an online tool for visualizing, annotating and managing phylogenetic trees. Nucleic Acids Res (2012) pp. 4. ([http://nar.oxfordjournals.org/content/40/W1/W569](http://nar.oxfordjournals.org/content/40/W1/W569)). See also the [citation page](miscs/citation.md).
 
 * **mirror sites**:
-For those who has difficulties accessing our [main site](http://www.evolgenius.info/evolview/) due to various reasons, please visit one of our following mirror sites:
+For those who has difficulties accessing our [main site](https://www.evolgenius.info/evolview/) due to various reasons, please visit one of our following mirror sites:
 
 |site #|url|geo location|
 |----------------------|-----|-----------|
@@ -30,7 +30,7 @@ For those who has difficulties accessing our [main site](http://www.evolgenius.i
 
 ## Table of Contents
 
-### [The WebServer](http://www.evolgenius.info/evolview/)
+### [The WebServer](https://www.evolgenius.info/evolview/)
 	* Evolview Web server
 
 ### [Supported Browsers](miscs/SupportedBrowsers.md)
