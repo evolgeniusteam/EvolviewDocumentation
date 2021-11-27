@@ -69,9 +69,14 @@ Style 1 (copy & paste the following contents to Evolview to view the visualisati
 
 ```
 !grouplabel	color=pink,fontsize=14,fontcolor=black,linewidth=2
-chicken	text=cute by itself,fontcolor=red,linewidth=4
-mouse,rat	text=rodent,linecolor=darkgrey,fontcolor=purple,linestyle=dashed
-chimp,human	text=mammal,color=darkgreen,textorientation=vertical,linewidth=4,fontsize=16
+AtSPL12,IbSPL14	text=A,color=coral,textorientation=vertical,linewidth=4,fontsize=16
+OsSPL9,AtSPL7	text=B,color=papayawhip,textorientation=vertical,linewidth=4,fontsize=16
+AtSPL5,IbSPL17	text=C,color=turqoise,textorientation=vertical,linewidth=4,fontsize=16
+IbSPL13,OsSPL10	text=D,color=khala,textorientation=vertical,linewidth=4,fontsize=16
+AtSPL15,OsSPL17	text=E,color=lavender,textorientation=vertical,linewidth=4,fontsize=16
+IbSPL24,IbSPL15	text=F,color=khaki,textorientation=vertical,linewidth=4,fontsize=16
+IbSPL3,OsSPL18	text=G,color=orchid,textorientation=vertical,linewidth=4,fontsize=16
+OsSPL4,IbSPL1	text=H,color=greenyellow,textorientation=vertical,linewidth=4,fontsize=16
 ```
 
 ![](images/DatasetGroupLabel_grouplabel_style1.png)
